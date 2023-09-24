@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+
 :root {
 
     --bg-primary: #fff;
     --txt-primary: #000;
+    --txt-title: #0057FF;
 
 }
 
@@ -14,7 +18,16 @@
 
 /* ESTILOS PRINCIPAIS ========================== */
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 body {
     background-color: var(--bg-primary);
     color: var(--txt-primary);
+}
+
+.logo-title{
+    font-family: 'Orbitron', sans-serif;
+    color: #0057FF;
 }
