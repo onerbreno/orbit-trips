@@ -1,0 +1,20 @@
+:root {
+
+    --bg-primary: #fff;
+    --txt-primary: #000;
+
+}
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --bg-primary: #000;
+        --txt-primary: #fff;
+    }
+}
+
+/* ESTILOS PRINCIPAIS ========================== */
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+}
