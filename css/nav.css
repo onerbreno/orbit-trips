@@ -1,5 +1,18 @@
 /* NAVEGAÇÃO ---------------------- */
 
+
+.link-accent {
+    color: var(--txt-title) !important;
+}
+
+.link-accent:hover {
+    color:white !important;
+    text-shadow: 1px 0 var(--txt-title),
+                0 -1px var(--txt-title),
+                -1px 0 var(--txt-title),
+                0 1px var(--txt-title);
+}
+
 .nav {
 
     width: 73vw;
