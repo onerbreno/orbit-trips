@@ -6,8 +6,9 @@
     --bg-primary: #fff;
     --txt-primary: #000;
     --txt-title: #0057FF;
-    --btn-accent: #0557ff;
+    --btn-accent: #0557FF;
 
+    --space-color: #080808;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,17 +30,45 @@ body {
     color: var(--txt-primary);
 }
 
-button{
-    padding: 16px 24px;
-    background-color: var(--btn-accent);
-    font-family: 'Orbitron';
-    color: white;
-    border: none;
-    font-weight: 700;
+button {
     cursor: pointer;
+
+    padding: 1rem 1.5rem;
+
+    background-color: var(--btn-accent);
+    color: white;
+
+    font-family: 'Orbitron';
+    font-weight: 700;
+
+    border: none;
+    white-space: nowrap;
 }
 
-.logo-title {
+.logo-title{
     font-family: 'Orbitron', sans-serif;
     color: #0057FF;
+}
+
+/* Botão padrão */
+button * {
+    font-family: 'Orbitron';
+}
+
+button:hover {
+    background-color: white;
+    outline: 2px solid var(--btn-accent);
+    color: var(--txt-title);
+}
+
+.text-accent {
+    color: var(--txt-title) !important;
+}
+
+.text-accent:hover {
+    color:white !important;
+    text-shadow: 1px 0 var(--txt-title),
+                0 -1px var(--txt-title),
+                -1px 0 var(--txt-title),
+                0 1px var(--txt-title);
 }
