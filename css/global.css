@@ -13,13 +13,16 @@
     :root {
         --bg-primary: #000;
         --txt-primary: #fff;
+
+        font-size: 62.5%;
     }
 }
 
 /* ESTILOS PRINCIPAIS ========================== */
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
 }
 
 body {
@@ -30,4 +33,180 @@ body {
 .logo-title{
     font-family: 'Orbitron', sans-serif;
     color: #0057FF;
+}
+
+#rocket {
+    padding: 0 20rem;
+}
+
+.title-rocket {
+    text-align: start;
+    font-size: 6rem;
+
+    border-bottom: 5px solid var(--txt-title);
+    margin-bottom: 8rem;
+}
+
+.title-rocket span {
+    font-size: 6rem;
+    color: var(--txt-title);
+}
+
+.wrapper-rocket {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-rocket {
+    width: 70rem;
+}
+
+.wrapper-dedscription-rocket {
+    display: flex;
+    flex-direction: column;
+}
+
+.description-rocket {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .title-rocket {
+        font-size: 6rem;
+        margin-bottom: 8rem;
+    }
+    
+    .title-rocket span {
+        font-size: 6rem;
+    }
+    #rocket {
+        padding: 0 10rem;
+    }
+    .wrapper-rocket {
+        gap: 2rem;
+    }
+    
+    .img-rocket {
+        width: 45rem;
+    }
+    
+    .description-rocket {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .title-rocket {
+        font-size: 4rem;
+        margin-bottom: 8rem;
+    }
+    
+    .title-rocket span {
+        font-size: 4rem;
+    }
+
+    #rocket {
+        padding: 0 6rem;
+    }
+    
+    .wrapper-rocket {
+        gap: 2rem;
+    }
+    
+    .img-rocket {
+        width: 45rem;
+    }
+    
+    .description-rocket {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .title-rocket {
+        font-size: 3rem;
+        margin-bottom: 8rem;
+    }
+    
+    .title-rocket span {
+        font-size: 3.5rem;
+    }
+    
+    #rocket {
+        padding: 0 6rem;
+    }
+
+    .wrapper-rocket {
+        gap: 2rem;
+    }
+    
+    .img-rocket {
+        width: 40rem;
+    }
+    
+    .description-rocket {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .title-rocket {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+    }
+    
+    .title-rocket span {
+        font-size: 3.5rem;
+    }
+
+    #rocket {
+        padding: 0 5rem;
+    }
+    
+    .wrapper-rocket {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-rocket {
+        width: 40rem;
+    }
+    
+    .description-rocket {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-rocket {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .title-rocket span {
+        font-size: 3.5rem;
+    }
+
+    #rocket {
+        padding: 0 5rem;
+    }
+    
+    .wrapper-rocket {
+        gap: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .img-rocket {
+        width: 35rem;
+    }
+    
+    .description-rocket {
+        font-size: 1.6rem;
+    }
 }
