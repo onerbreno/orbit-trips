@@ -27,7 +27,59 @@ body {
     color: var(--txt-primary);
 }
 
-.logo-title{
+/* ESTILOS SECUNDARIOS ========================== */
+
+.sobre-nos {
+    display: flex;
+    padding: 5% 10%;
+}
+
+.sobre-nos > .text h1 {
     font-family: 'Orbitron', sans-serif;
-    color: #0057FF;
+    font-size: 3em;
+    font-weight: 700;
+    border-bottom: 5px solid var(--txt-title);
+    margin-bottom: 1em;
+}
+
+.sobre-nos > .text span {
+    color: var(--txt-title);
+    font-weight: 700;
+    font-size: 1.1em;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.sobre-nos > .text p {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.sobre-nos > .img img {
+    width: 100%;
+    height: auto;
+    min-width: 60vh;
+    padding-top: 100px;
+}
+
+@media screen and (max-width: 1440px) {
+    .sobre-nos > .text {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .sobre-nos {
+        flex-direction: column;
+    }
+
+    .sobre-nos > .text {
+        padding-right: 2em;
+    }
+
+    .sobre-nos > .img {
+        text-align: center;
+        width: 100%;
+    }
 }
