@@ -6,10 +6,11 @@
     --bg-primary: #fff;
     --txt-primary: #000;
     --txt-title: #0057FF;
+    --btn-accent: #0557ff;
 
 }
 
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
     :root {
         --bg-primary: #000;
         --txt-primary: #fff;
@@ -20,6 +21,7 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 body {
@@ -27,7 +29,17 @@ body {
     color: var(--txt-primary);
 }
 
-.logo-title{
+button{
+    padding: 16px 24px;
+    background-color: var(--btn-accent);
+    font-family: 'Orbitron';
+    color: white;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo-title {
     font-family: 'Orbitron', sans-serif;
     color: #0057FF;
 }
