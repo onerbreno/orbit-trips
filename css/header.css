@@ -1,10 +1,101 @@
 .header {
 
     background-color: var(--space-color);
+    background-image: url("../svg/Stars.svg");
 
-    height: 120px;
+    height: 100vh;
     width: 100vw;
 
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.header > section{
+    /* display: grid; */
+}
+
+.foguete {
+    position: fixed;
+    top: 5%;
+    left: 62.5vh;
+
+    filter: opacity(0.9);
+}
+
+.lens-flare {
+    position: fixed;
+    top: 10vh;
+    left: 62.5vh;
+    z-index: 2;
+    animation: shine 3.5s infinite;
+}
+
+@keyframes shine{
+    0% {
+        opacity: 0.8;
+        filter: brightness(0.91);
+        transform: rotate(-1deg);
+    }
+    50% {
+
+        opacity: 1;
+        filter: brightness(1.1);
+        transform: rotate(-0.5deg);
+    }
+    100% {
+
+        opacity: 0.8;
+        filter: brightness(1);
+        transform: rotate(-1deg);
+    }
+}
+
+.hero-intro {
+    position: fixed;
     display: grid;
-    place-content: center;
+
+    top: 45vh;
+    left: 50vh;
+
+    text-align: center;
+
+    gap: 24px;
+}
+
+.hero-intro h1 {
+    font-size: 70px;
+    font-weight: 500;
+    font-family: 'Orbitron';
+}
+
+.hero-intro p {
+    font-size: 24px;
+    line-height: 1.5;
+
+    color: rgba(255, 255, 255, 0.67);
+}
+
+.hero-intro>button {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.hero-intro h1{
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 2.5s steps(40, end);
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
