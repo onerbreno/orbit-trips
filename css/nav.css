@@ -1,5 +1,8 @@
 /* NAVEGAÇÃO ---------------------- */
 
+.orbit-button{
+    display: none;
+}
 
 .link-accent {
     color: var(--txt-title) !important;
@@ -33,8 +36,9 @@
     justify-content: end;
 }
 
-.nav a {
+.nav-items a {
     cursor: pointer;
+    display: none;
 
     text-decoration: none;
     color: white;
@@ -49,10 +53,11 @@
     color: var(--txt-title);
 }
 
-@media screen and (max-width: 1550px) {
+/* Remoção gradual de links */
+@media screen and (min-width: 1550px) {
 
     .nav-items a:nth-of-type(1){
-        display: none;
+        display: inline;
     }
 
     .mobile-button{
@@ -60,32 +65,34 @@
     }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (min-width: 1450px) {
 
     .nav-items a:nth-of-type(2){
-        display: none;
+        display: inline;
     }
 }
 
-@media screen and (max-width: 1350px) {
+@media screen and (min-width: 1250px) {
 
     .nav-items a:nth-of-type(5){
-        display: none;
+        display: inline;
     }
 }
 
-@media screen and (max-width: 1250px) {
+@media screen and (min-width: 1150px) {
 
     .nav-items a:nth-of-type(3){
-        display: none;
+        display: inline;
     }
 }
 
 
-@media screen and (max-width: 900px) {
 
-    .nav a:not(.logo) {
-        display: none;
+/* Responsividade */
+@media screen and (min-width: 900px) {
+
+    .nav a:nth-of-type(4){
+        display: inline;
     }
 
     .nav>span {
@@ -101,7 +108,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 600px) {
 
     .nav {
         justify-content: center;
@@ -114,7 +121,7 @@
     }
 
     .orbit-button {
-        display: none;
+        display: inline;
     }
 }
 
@@ -123,7 +130,7 @@
 /* Hamburguer menu para telas pequenas */
 .mobile-button {
     background-color: transparent;
-    display: none;
+    display: inline;
 
     margin: 0;
     padding: 0;
@@ -138,9 +145,9 @@
     background-color: transparent;  
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (min-width: 950px) {
     .mobile-button {
-        display: inline !important;
+        display: none !important;
     }
 }
 /* ----------------------------- */
