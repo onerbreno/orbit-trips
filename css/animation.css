@@ -1,0 +1,13 @@
+* {
+    overflow-x: hidden;
+}
+
+.animation-section {
+    width: 100%;
+    height: 100vh;
+}
+
+.video_class {
+    width: 100%;
+    height: 100vh;
+}
