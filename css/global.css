@@ -35,7 +35,6 @@ body {
     background-color: var(--bg-primary);
     color: var(--txt-primary);
 
-    min-height: 110vh;
 }
 
 .logo-title{
