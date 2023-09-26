@@ -139,6 +139,7 @@
 }
 
 .mobile-button:hover {
+    outline: none;
     background-color: transparent;  
 }
 
