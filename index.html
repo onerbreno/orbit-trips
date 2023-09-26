@@ -1,19 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orbit Travel | Viagens interstelares </title>
+    <title>Orbit Trips</title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="shortcut icon" href="./svg/OrbitTravel.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/intro.css">
 </head>
+
 <body>
     <header class="header">
-        <h1 class="logo-title">Orbit Travel</h1>
-        <nav class="nav"></nav>
+        <nav class="nav">
 
+            <span>
+                <a class="logo" href="./index.html"><img width="104" height="22" src="./img/logo2_nobackground.png"
+                        alt="OrbitTrips logo"></a>
+            </span>
+
+            <span class="nav-items">
+                <a href="#inicio" class="link-accent">INÍCIO</a>
+                <a href="#destaque">DESTAQUE</a>
+                <a href="#sobre_nos">SOBRE NÓS</a>
+                <a href="#preços">PREÇOS</a>
+                <a href="foguete">FOGUETE</a>
+                <button class="mobile-button">&#9776;</button>
+                <button class="orbit-button">VOE PARA O ESPAÇO</button>
+            </span>
+        </nav>
+        <section>
+     
+            <div class="img-div">
+                <img draggable="false" class="foguete" src="./img/foguete2.png" alt="">
+            </div>
+       
+            <article class="hero-intro">
+                <hgroup draggable="false">
+                    <h1>
+                        _Explore novos <br> mundos com a <span class="logo-title">{OrbitTrips}!</span></h1>
+
+                    </h1>
+
+                    <p>Bem-vindo à revolução das viagens <br> interplanetárias!</p>
+                </hgroup>
+                <button>VOE PARA ESPAÇO</button>
+
+                <div class="hero-mouse">
+        
+                    <img src="./svg/bi_mouse.svg" alt="Mouse">
+        
+                    <img src="./svg/ph_arrow-up-bold.svg" alt="Arrow down">
+        
+                </div>
+            </article>
+        </section>
     </header>
     <main class="container">
+       <section id="introduction-section">
+            <h2 class="title-introduction-section">Reserve Sua Viagem Espacial Agora!</h2>
+            <div class="wrapper-introduction-section">
+                <div>
+                    <img src="./svg/img-introduction-section.svg"
+                        alt="imagem de uma janela de um foguete para uma nebulosa" class="img-introduction-section">
+                </div>
+                <div>
+                    <p class="description-introduction-section">
+                        Embarque em uma aventura única e descubra o espaço como nunca antes. Vivencie vistas
+                        deslumbrantes, experiências emocionantes e momentos que durarão a vida toda. Não espere mais, o
+                        universo espera por você. Reserve sua jornada ao espaço hoje mesmo.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+  
         <section id="rocket">
             <h2 class="title-rocket">O Foguete <span>Infinity Soarer</span></h2>
             <div class="wrapper-rocket">
@@ -28,5 +91,19 @@
         </section>
     </main>
     <footer class="footer"></footer>
+
+    <!-- VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper">
+        </div>
+    </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
+
 </html>

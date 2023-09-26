@@ -1,0 +1,149 @@
+/* NAVEGAÇÃO ---------------------- */
+
+.orbit-button{
+    display: none;
+}
+
+.link-accent {
+    color: var(--txt-title) !important;
+}
+
+.link-accent:hover {
+    color:white !important;
+    text-shadow: 1px 0 var(--txt-title),
+                0 -1px var(--txt-title),
+                -1px 0 var(--txt-title),
+                0 1px var(--txt-title);
+}
+
+.nav {
+
+    height: 7.5rem;
+    width: 73vw;
+
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    z-index: 10;
+}
+
+.nav>span {
+    display: flex;
+    gap: 3rem;
+
+    align-items: center;
+
+}
+
+.nav-items{
+    justify-content: end;
+}
+
+.nav-items a {
+    cursor: pointer;
+    display: none;
+
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-family: 'Orbitron';
+    text-align: center;
+
+    white-space: nowrap;
+}
+
+.nav a:hover {
+    color: var(--txt-title);
+}
+
+@media screen and (min-width: 1450px) {
+
+    .mobile-button {
+        display: none !important;
+    }
+
+    .nav-items a:nth-of-type(1n){
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+
+    .nav-items a:nth-of-type(2n){
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+
+    .nav-items a:nth-of-type(3n){
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    .nav a:nth-of-type(4n){
+        display: inline;
+    }
+
+    .nav>span {
+        gap: 2rem;
+    }
+
+    .nav>span:nth-of-type(1) {
+        justify-content: center;
+    }
+
+    .nav>span:nth-of-type(2) {
+        justify-content: end;
+    }
+}
+
+@media screen and (min-width: 600px) {
+
+    .nav {
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .nav > span:first-of-type{
+        justify-content: left;
+    }
+
+    .orbit-button {
+        display: inline;
+    }
+}
+
+
+
+/* Hamburguer menu para telas pequenas */
+.mobile-button {
+    cursor: pointer;
+
+    appearance: none;
+    background-color: transparent;
+    color: white;
+    border: none;
+    display: inline;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5rem;
+
+    width: 1rem;
+
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+.mobile-button:hover {
+    outline: none;
+    background-color: transparent;  
+}
+
+/* ----------------------------- */
