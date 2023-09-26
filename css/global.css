@@ -6,7 +6,7 @@
     /* Responsividade */
 
     --bg-primary: #fff;
-    --txt-primary: #000;
+    --txt-primary: #080808;
     --txt-title: #0057FF;
 
     /* CORES QUE NÃO SERÃO ALTERADAS NO DARK/LIGHT MODE*/
@@ -19,7 +19,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-primary: #000;
+        --bg-primary: #080808;
         --txt-primary: #fff;
     }
 }
