@@ -1,0 +1,10 @@
+.header {
+
+    background-color: var(--space-color);
+
+    height: 120px;
+    width: 100vw;
+
+    display: grid;
+    place-content: center;
+}

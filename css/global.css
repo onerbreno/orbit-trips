@@ -3,13 +3,21 @@
 
 :root {
 
+    /* Responsividade */
+
     --bg-primary: #fff;
     --txt-primary: #000;
     --txt-title: #0057FF;
 
+    /* CORES QUE NÃO SERÃO ALTERADAS NO DARK/LIGHT MODE*/
+    --space-color: #080808;
+
+    /* VARIÁVEIS BOTÃO */
+    --btn-accent: #0557FF;
+
 }
 
-@media (prefers-color-scheme: dark){
+@media (prefers-color-scheme: dark) {
     :root {
         --bg-primary: #000;
         --txt-primary: #fff;
@@ -20,6 +28,7 @@
 
 * {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 body {
@@ -30,4 +39,26 @@ body {
 .logo-title{
     font-family: 'Orbitron', sans-serif;
     color: #0057FF;
+}
+
+/* Botão padrão */
+button {
+    cursor: pointer;
+
+    padding: 1rem 1.5rem;
+
+    background-color: var(--btn-accent);
+    color: white;
+
+    font-family: 'Orbitron';
+    font-weight: 700;
+
+    border: none;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: white;
+    outline: 2px solid var(--btn-accent);
+    color: var(--txt-title);
 }
