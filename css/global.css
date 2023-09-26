@@ -113,12 +113,14 @@ body {
     justify-content: center;
 }
 
-.card-footer p {
+.card-footer button {
     background-color: var(--txt-title);
     padding: 15px 40px 15px;
+    font-weight: 500;
 }
 
-.card-footer p:hover {
+.card-footer button:hover {
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -165,7 +167,7 @@ body {
         font-size: 12px;
     }
 
-    .card-footer p {
+    .card-footer button {
         padding: 10px 25px 15px;
         border-radius: 15px;
     }
@@ -210,7 +212,7 @@ body {
         font-size: 14px;
     }
 
-    .card-footer p {
+    .card-footer button {
         padding: 10px 25px 15px;
         border-radius: 15px;
     }
@@ -257,7 +259,7 @@ body {
         font-size: 18px;
     }
 
-    .card-footer p {
+    .card-footer button {
         padding: 10px 25px 15px;
         border-radius: 15px;
     }
@@ -302,7 +304,7 @@ body {
         font-size: 18px;
     }
     
-    .card-footer p {
+    .card-footer button {
         padding: 10px 25px 15px;
         border-radius: 15px;
     }
@@ -406,7 +408,7 @@ body {
         font-size: 16px;
     }
 
-    .card-footer p {
+    .card-footer button {
         padding: 10px 25px 15px;
         border-radius: 15px;
     }
