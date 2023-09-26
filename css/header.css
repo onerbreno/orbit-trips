@@ -1,10 +1,219 @@
 .header {
 
     background-color: var(--space-color);
+    background-image: url("../svg/Stars.svg");
 
-    height: 120px;
+    height: 110vh;
     width: 100vw;
 
+    scroll-behavior: smooth;
+}
+
+.img-div {
+    background-image: url("../img/comets.png");
+    background-size: contain;
+    width: fit-content;
+    margin: 0 auto;
+
+
+    z-index: -10;
+}
+
+.foguete {
+    margin: 0 4.5% 0;
+
+    filter: opacity(0.7);
+    transition: 1000ms;
+    display: none;
+    animation: shine 2.5s infinite;
+}
+
+
+.hero-intro {
+    position: relative;
     display: grid;
-    place-content: center;
+
+    top: -52vh;
+
+    text-align: center;
+
+    gap: 1.5rem;
+}
+
+.hero-mouse {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.hero-mouse > img {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+
+    cursor:all-scroll;
+}
+
+.hero-intro h1 {
+
+    font-weight: 500;
+    font-family: 'Orbitron';
+    color: white;
+
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation:
+        typing 2.5s steps(40, end);
+}
+
+.hero-intro p {
+    line-height: 1.5;
+
+    color: rgba(255, 255, 255, 0.67);
+}
+
+.hero-intro>button {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+
+.hero-intro>div {
+    width: 100%;
+    
+}
+
+.logo-title{
+    cursor: pointer;
+}
+
+/* Sobrescrita */
+
+.foguete{
+    display: none;
+}
+
+.hero-intro{
+    position: static;
+    margin-top: 5vh;
+}
+
+.hero-intro h1, p{
+    font-size: 1.2rem;
+    white-space: wrap;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+
+@keyframes rocketup {
+    0% {
+        opacity: 10%;
+        margin: 0 auto;
+    }
+
+    100% {
+        opacity: 100%;
+        margin: -10% auto;
+    }
+}
+
+@keyframes tilt {
+    0% {
+        transform: rotate(1deg);
+    }
+
+    50% {
+        transform: rotate(0.5deg);
+    }
+
+    75% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0.80;
+    }
+
+    25% {
+
+        opacity: 0.87;
+    }
+
+    50% {
+
+        opacity: 0.95;
+    }
+
+    75% {
+
+        opacity: 0.87;
+    }
+
+    100% {
+
+        opacity: 0.80;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 600px) and (orientation: portrait), (min-height: 600px) and (orientation:landscape){
+    
+    .foguete{
+        display:inline-block;
+    }
+    
+    .hero-intro{
+        margin-top: 20vh;
+        position: relative;
+    }
+    .hero-intro h1, p {
+        font-size: 1.4rem;
+    }
+    .hero-mouse{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px){
+
+    .hero-intro h1{
+        font-size: 2.4rem;
+    }
+    .hero-intro p {
+        font-size: 1.9rem;
+    }
+    .hero-mouse {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .hero-intro h1 {
+        font-size: 4.375rem;
+    }
+
+    .hero-intro p {
+        font-size: 1.5rem;
+    }
 }
