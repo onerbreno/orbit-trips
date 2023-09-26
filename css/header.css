@@ -9,51 +9,108 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-
-}
-
-.header > section{
-    /* display: grid; */
+    scroll-behavior: smooth;
 }
 
 .foguete {
-    position: fixed;
+    position: absolute;
     top: 5%;
     left: 62.5vh;
 
-    filter: opacity(0.9);
+    filter: opacity(0.6);
+    transition: 1000ms;
+    animation: rocketup 3.5s steps(60, end);
+}
+
+@keyframes rocketup {
+    0% {
+        opacity: 10%;
+        top: 10%;
+    }
+
+    100% {
+        opacity: 100%;
+        top: 5%
+    }
 }
 
 .lens-flare {
-    position: fixed;
-    top: 10vh;
-    left: 62.5vh;
-    z-index: 2;
-    animation: shine 3.5s infinite;
+    position: absolute;
+    top: 4vh;
+    left: 66.5vh;
+    z-index: 3;
+    opacity: 0.7;
+    animation: shine 8.5s infinite,
+        tilt 3.5s infinite,
+        rocketup 3.5s steps(30, end);
 }
 
-@keyframes shine{
+.lens-blur {
+    position: absolute;
+    top: 12vh;
+    left: 90.5vh;
+    z-index: 3;
+    animation: shine 3.5s infinite,
+        rocketup 3.5s steps(30, end);
+}
+
+.flare {
+    position: absolute;
+    opacity: 0.5;
+    top: 1%;
+    left: 97.9vh;
+    z-index: 2;
+    animation:
+        tilt 3.5s infinite,
+        rocketup 3.5s steps(30, end);
+    /* shine 1.5s infinite; */
+}
+
+@keyframes tilt {
     0% {
-        opacity: 0.8;
-        filter: brightness(0.91);
-        transform: rotate(-1deg);
+        transform: rotate(1deg);
     }
+
+    50% {
+        transform: rotate(0.5deg);
+    }
+
+    75% {
+        transform: rotate(1deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+@keyframes shine {
+    0% {
+        opacity: 1;
+        filter: brightness(2.3);
+    }
+
     50% {
 
-        opacity: 1;
-        filter: brightness(1.1);
-        transform: rotate(-0.5deg);
+        opacity: 0.6;
+        filter: brightness(0.5);
     }
+
+    75% {
+
+        opacity: 0.6;
+        filter: brightness(0.9);
+    }
+
     100% {
 
-        opacity: 0.8;
-        filter: brightness(1);
-        transform: rotate(-1deg);
+        opacity: 1;
+        filter: brightness(2.3);
     }
 }
 
 .hero-intro {
-    position: fixed;
+    position: absolute;
     display: grid;
 
     top: 45vh;
@@ -82,7 +139,7 @@
     width: fit-content;
 }
 
-.hero-intro h1{
+.hero-intro h1 {
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
