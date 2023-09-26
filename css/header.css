@@ -16,7 +16,7 @@
 .foguete {
     position: absolute;
     top: 5%;
-    left: 31vw;
+    left: 30vw;
 
     filter: opacity(0.6);
     transition: 1000ms;
