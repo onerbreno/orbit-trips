@@ -18,10 +18,14 @@
 
 .nav {
 
+    height: 7.5rem;
     width: 73vw;
+
+    margin: 0 auto;
 
     display: grid;
     grid-template-columns: 2fr 4fr;
+    z-index: 10;
 }
 
 .nav>span {
@@ -52,7 +56,6 @@
 .nav a:hover {
     color: var(--txt-title);
 }
-
 
 @media screen and (min-width: 1450px) {
 
