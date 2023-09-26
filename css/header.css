@@ -12,14 +12,47 @@
     scroll-behavior: smooth;
 }
 
+
 .foguete {
     position: absolute;
     top: 5%;
-    left: 62.5vh;
+    left: 31vw;
 
     filter: opacity(0.6);
     transition: 1000ms;
     animation: rocketup 3.5s steps(60, end);
+}
+
+.lens-flare {
+    position: absolute;
+    top: 4vh;
+    left: 32vw;
+    z-index: 3;
+    opacity: 0.7;
+    animation: shine 8.5s infinite,
+        tilt 3.5s infinite,
+        rocketup 3.5s steps(30, end);
+}
+
+.lens-blur {
+    position: absolute;
+    top: 12vh;
+    left: 50vw;
+    z-index: 3;
+    animation: shine 3.5s infinite,
+        rocketup 3.5s steps(30, end);
+}
+
+.flare {
+    position: absolute;
+    opacity: 0.5;
+    top: 1%;
+    left: 50vw;
+    z-index: 2;
+    animation:
+        tilt 3.5s infinite,
+        rocketup 3.5s steps(30, end);
+    /* shine 1.5s infinite; */
 }
 
 @keyframes rocketup {
@@ -32,38 +65,6 @@
         opacity: 100%;
         top: 5%
     }
-}
-
-.lens-flare {
-    position: absolute;
-    top: 4vh;
-    left: 66.5vh;
-    z-index: 3;
-    opacity: 0.7;
-    animation: shine 8.5s infinite,
-        tilt 3.5s infinite,
-        rocketup 3.5s steps(30, end);
-}
-
-.lens-blur {
-    position: absolute;
-    top: 12vh;
-    left: 90.5vh;
-    z-index: 3;
-    animation: shine 3.5s infinite,
-        rocketup 3.5s steps(30, end);
-}
-
-.flare {
-    position: absolute;
-    opacity: 0.5;
-    top: 1%;
-    left: 97.9vh;
-    z-index: 2;
-    animation:
-        tilt 3.5s infinite,
-        rocketup 3.5s steps(30, end);
-    /* shine 1.5s infinite; */
 }
 
 @keyframes tilt {
@@ -114,11 +115,22 @@
     display: grid;
 
     top: 45vh;
-    left: 50vh;
+    left: 25vw;
 
     text-align: center;
 
     gap: 24px;
+}
+
+.hero-mouse {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    top: 85vh;
+    left: 50vw;
 }
 
 .hero-intro h1 {
@@ -145,6 +157,23 @@
     margin: 0 auto;
     animation:
         typing 2.5s steps(40, end);
+}
+
+.hero-intro>div {
+    width: 100%;
+
+}
+
+@keyframes rocketup {
+    0% {
+        opacity: 10%;
+        top: 10%;
+    }
+
+    100% {
+        opacity: 100%;
+        top: 5%
+    }
 }
 
 @keyframes typing {
