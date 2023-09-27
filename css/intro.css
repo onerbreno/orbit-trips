@@ -10,6 +10,12 @@
     background-image: url(../svg/Stars.svg);
 }
 
+#introduction-section hr {
+    margin: 2rem auto;
+    width: 100%;
+    border-style: dashed;
+}
+
 .title-introduction-section {
     text-align: center;
     font-size: 3.75rem;
@@ -33,8 +39,9 @@
 
 .description-introduction-section {
     font-size: 2.18rem;
-    font-weight: 700;
+    font-family: 'Montserrat';
 }
+
 
 @media (min-width: 1200px) and (max-width: 1919px) {
     #introduction-section {
