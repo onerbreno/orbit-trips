@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 
 :root {
 
@@ -37,7 +39,7 @@ body {
 
 }
 
-.logo-title{
+.logo-title {
     font-family: 'Orbitron', sans-serif;
     color: #0057FF;
 }
@@ -48,18 +50,19 @@ button {
 
     padding: 1rem 1.5rem;
 
-    background-color: var(--btn-accent);
+    background-color: transparent;
     color: white;
 
     font-family: 'Orbitron';
     font-weight: 700;
 
-    border: none;
+    border: 1px solid white;
     white-space: nowrap;
 }
 
 button:hover {
-    background-color: white;
-    outline: 2px solid var(--btn-accent);
-    color: var(--txt-title);
+    background-color: var(--btn-accent);
+    border: 1px solid transparent;
+    /* outline: 2px solid var(--btn-accent); */
+    color: white;
 }
