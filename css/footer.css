@@ -1,0 +1,262 @@
+.footer{
+    background-color: rgb(19, 18, 20);
+    color: white;
+
+}
+
+#footer-1 {
+    background-color: var(--space-color);
+    background-image: url(../svg/Stars.svg);
+
+    width: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+    min-height: 60vh;
+
+    border-right: 2px inset rgba(255, 255, 255, 0.342);
+
+}
+
+.copy {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.5rem;
+}
+
+.copy ul li {
+    padding-bottom: 10px;
+}
+
+.copy ul li :hover{
+    font-weight: bold;
+}
+
+#footer-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size: 1rem;
+}
+
+#footer-2 ul li{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+#footer-2 ul li :hover{
+    color: var(--txt-title);
+}
+
+#footer-3 {
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.social {
+    background-color: var(--txt-title);
+    padding: 10px 10px;
+    text-align: center;;
+}
+
+.social span {
+    margin-left: 6px ;
+    cursor: pointer;
+}
+
+.footerSection {
+    display: flex;    
+    justify-content: center;
+}
+
+.footerSection article {
+    width: calc(96vw / 3);
+}
+.footerSection article ul {
+    list-style: none;
+    
+}
+
+.footerSection article ul li a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+#footer-3 h3{
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+ }
+
+ form{
+    display: flex;
+    flex-direction: column;
+    
+    padding-inline: 10px;
+}
+
+ label[for="checkbox"] {
+    font-size: 10px;
+ }
+
+ input[name="email"]{
+    color: var(--bg-primary);
+    background-color: transparent;
+    color: #FFF;
+    border-style: none;
+    border-bottom: 2px solid #FFF;
+    outline: none;
+ }
+
+ #footer-3 h3 {
+    margin-bottom: 10px;
+ }
+
+ #footer-3 p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--font-text);
+ }
+
+.terms {
+    display: flex;
+    align-items: flex-start;
+}
+
+.terms input[type="checkbox"] { 
+    margin-right: 5px;
+}
+ #footer-3 input[name="email"] {
+    margin-bottom: 10px;
+ }
+
+ #footer-3 form button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    padding: 5px 20px 5px;
+    background-color: transparent;
+    color: #FFF;
+    border-color: var(--txt-title);
+ }
+
+ #footer-3 form button {
+    cursor: pointer;
+ }
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .footerSection {
+        display: flex; 
+        flex-direction: column;   
+        justify-content: center;
+        gap: 50px;
+    }
+    
+    .copy {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .copy p {
+        order: 2;
+        padding-bottom: 0px;
+        
+    }
+    
+    .footerSection article {
+        width: 96vw ;
+    }
+    
+    #footer-1, #footer-2, #footer-3{
+        min-height: 35vh;
+    }
+
+    #footer-1 {
+        border-top:  2px inset rgba(255, 255, 255, 0.342);
+        border-left: none;
+        width: 100%;
+        order: 3;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        /* display: none; */
+    }
+    
+    #footer-2 {
+        display: none;
+    }
+    
+     #footer-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 12px;
+        margin-bottom: 20px;
+     }
+    .copy ul li {
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .copy{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer-1 p{
+    order: 2;
+    }
+
+}
+
+@media (min-width: 1368px) and (max-width: 1920px){
+    .copy {
+        justify-content: space-around;
+        font-size: 14px;
+    }
+
+    #footer-2 {
+        font-size: 1.125rem;
+    }
+
+    #footer-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #footer-3 h3 {
+        font-size: 1.563rem;
+    }
+
+    #footer-3 p {
+        font-size: 1rem;
+    }
+
+    #footer-3 label[for="email"] {
+        font-size: 2rem;
+    }
+
+    #footer-3  label[for="checkbox"] {
+        font-size: 0.875;
+        margin-bottom: 0.938rem;
+    }
+
+    #footer-3 button[type="button"] {
+        font-size: 1.125rem;
+        width: 200px;
+    }
+
+}
