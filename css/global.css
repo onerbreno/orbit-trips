@@ -29,6 +29,7 @@
 /* ESTILOS PRINCIPAIS ========================== */
 
 * {
+    scroll-behavior: smooth;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
 }
