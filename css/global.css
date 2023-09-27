@@ -29,6 +29,9 @@
 /* ESTILOS PRINCIPAIS ========================== */
 
 * {
+    padding: 0;
+    box-sizing: border-box;
+
     font-family: 'Orbitron', sans-serif;
     font-size: 1.6rem;
 }
@@ -36,7 +39,11 @@
 body {
     background-color: var(--bg-primary);
     color: var(--txt-primary);
+}
 
+.logo-title {
+    font-family: 'Orbitron', sans-serif;
+    color: #0057FF;
 }
 
 /* Botão padrão */
