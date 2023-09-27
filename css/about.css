@@ -1,6 +1,12 @@
 .sobre-nos {
+    min-height: 100vh;
+    padding: 5rem 20rem;
+
     display: flex;
-    padding: 5% 10%;
+    justify-content: center;
+
+
+    background-image: url(../svg/Stars.svg);
 }
 
 .sobre-nos > .text h1 {

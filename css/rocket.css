@@ -1,5 +1,13 @@
 #rocket {
-    padding: 0 20rem;
+    min-height: 100vh;
+    padding: 5rem 20rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    background-image: url(../svg/Stars.svg);
 }
 
 .title-rocket {

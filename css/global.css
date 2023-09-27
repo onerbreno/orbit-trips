@@ -67,3 +67,10 @@ button:hover {
     outline: 2px solid var(--btn-accent);
     color: var(--txt-title);
 }
+
+.section-divider{
+    border: 1px inset #ffffff52;
+    width: 50%;
+
+    margin: 0.1rem auto;
+}
