@@ -41,8 +41,9 @@ gsap.fromTo(
       scrub: 1,
 
       start: "30%",
-      end: "70%",
+      end: "0.001%",
     },
+    
     onComplete: () => {
       gsap.to(".anim-text", { opacity: 0 });
     },
