@@ -10,6 +10,9 @@
 
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/nav.css">
+
+    <link rel="stylesheet" href="./css/animation.css">
+
     <link rel="stylesheet" href="./css/intro.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/rocket.css">
@@ -36,6 +39,7 @@
             </span>
         </nav>
         <section>
+
             <div class="img-div">
                 <img draggable="false" class="foguete" src="./img/foguete2.png" alt="">
             </div>
@@ -61,6 +65,14 @@
     </header>
     <main class="container">
 
+        <section class="anim-section">
+            <div class="anim-text">
+                <h2 class="anim-title">_UMA EXPERIÊNCIA</h2>
+                <h3 class="anim-desc">Bem-vindo à revolução das viagens interplanetárias! A revolução das viagens interplanetárias!</h3>
+                <button class="anim-btn">VOE AO ESPAÇO</button>
+            </div>
+            <canvas class="canvas"></canvas>
+        </section>
         <section id="introduction-section">
             <h1 class="title-introduction-section">Reserve Sua Viagem Espacial Agora!</h1>
             <div class="wrapper-introduction-section">
@@ -287,10 +299,24 @@
             </div>
         </div>
     </div>
-    <!-- <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script> -->
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+
+    <!-- ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+        integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+    <script src="./js/animateOnScroll.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
