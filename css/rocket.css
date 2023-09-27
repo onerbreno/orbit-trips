@@ -6,8 +6,7 @@
     flex-direction: column;
     justify-content: center;
 
-
-    background-image: url(../svg/Stars.svg);
+    /* background-image: url(../svg/Stars.svg); */
 }
 
 .title-rocket {
@@ -33,6 +32,8 @@
 
 .img-rocket {
     width: 70rem;
+    border: 1px solid rgba(255, 255, 255, 0.438);
+    box-shadow: 2px 3px 2px rgba(0,0,0,0.4);
 }
 
 .wrapper-dedscription-rocket {
