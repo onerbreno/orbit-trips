@@ -7,9 +7,9 @@
     justify-content: center;
 
 
-    background-image: url(../svg/Stars2.svg);
+    background-image: url(../svg/Stars.svg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; 
 }
 
 .cardSection h2 {
