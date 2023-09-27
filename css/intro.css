@@ -1,0 +1,123 @@
+#introduction-section {
+    padding: 0 20rem;
+}
+
+.title-introduction-section {
+    text-align: start;
+    font-size: 6rem;
+
+    margin-bottom: 8rem;
+    
+    border-bottom: 5px solid var(--txt-title);
+}
+
+.wrapper-introduction-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-introduction-section {
+    width: 45rem;
+}
+
+.description-introduction-section {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    #introduction-section {
+        padding: 0 10rem;
+    }
+
+    .description-introduction-section {
+        font-size: 3rem;
+    }
+
+    .title-introduction-section {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .title-introduction-section {
+        font-size: 4rem;
+    }
+
+    #introduction-section {
+        padding: 0 6rem;
+    }
+
+    .description-introduction-section {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .title-introduction-section {
+        font-size: 3rem;
+    }
+    
+    #introduction-section {
+        padding: 0 6rem;
+    }
+
+    .img-introduction-section {
+        width: 38rem;
+    }
+
+    .description-introduction-section {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .title-introduction-section {
+        font-size: 2.5rem;
+        margin-bottom: 6rem;
+    }
+    
+    .wrapper-introduction-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #introduction-section {
+        padding: 0 5rem;
+    }
+
+    .img-introduction-section {
+        width: 32rem;
+    }
+
+    .description-introduction-section {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-introduction-section {
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    
+    .wrapper-introduction-section {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #introduction-section {
+        padding: 0 3rem;
+    }
+
+    .img-introduction-section {
+        width: 28rem;
+    }
+
+    .description-introduction-section {
+        font-size: 1.6rem;
+    }
+}

@@ -3,26 +3,37 @@
 
 :root {
 
-    --bg-primary: #FFF;
-    --txt-primary: #000;
+    /* Responsividade */
+
+    --bg-primary: #fff;
+    --txt-primary: #080808;
     --txt-title: #0057FF;
+
+    /* CORES QUE NÃO SERÃO ALTERADAS NO DARK/LIGHT MODE*/
+    --space-color: #080808;
+
+    /* VARIÁVEIS BOTÃO */
+    --btn-accent: #0557FF;
 
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-primary: #000;
+        --bg-primary: #080808;
         --txt-primary: #fff;
+
+        font-size: 62.5%;
     }
 }
 
 /* ESTILOS PRINCIPAIS ========================== */
 
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
 }
 
 body {
@@ -35,7 +46,6 @@ body {
     color: #0057FF;
 }
 
-/*ESTILIZAÇÃO CARDS ===============================*/
 .cardSection {
     margin-top: 20px;
     margin-inline: 30px;
@@ -452,4 +462,27 @@ body {
     #card-3 {
         margin-top: 40px;
     }
+
+}
+
+/* Botão padrão */
+button {
+    cursor: pointer;
+
+    padding: 1rem 1.5rem;
+
+    background-color: var(--btn-accent);
+    color: white;
+
+    font-family: 'Orbitron';
+    font-weight: 700;
+
+    border: none;
+    white-space: nowrap;
+}
+
+button:hover {
+    background-color: white;
+    outline: 2px solid var(--btn-accent);
+    color: var(--txt-title);
 }
