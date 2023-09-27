@@ -20,7 +20,7 @@
 }
 
 .sobre-nos > .text-wrapper h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     border-bottom: 5px solid var(--txt-title);
     margin-bottom: 1em;
 }
@@ -31,13 +31,8 @@
     font-family: 'Orbitron', sans-serif;
 }
 
-.sobre-nos > .text-wrapper p{
-    font-family: 'Orbitron', sans-serif;
-}
-
 .sobre-nos > .text-wrapper p {
     font-family: 'Montserrat', sans-serif;
-    /* font-size: 4rem; */
     margin-top: 1em;
     word-spacing: 1px;
 }
@@ -65,13 +60,13 @@
     }
     
     .sobre-nos > .text-wrapper h1 {
-        font-size: 2rem;
+        font-size: 1.125rem;
         text-align: center;
     }
 
     .sobre-nos > .text-wrapper p {
         font-family: 'Montserrat', sans-serif;
-        font-size: 1rem;
+        font-size: 1.125rem;
         margin-top: 1em;
         word-spacing: 1px;
         text-align: justify;
