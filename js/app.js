@@ -40,8 +40,8 @@ gsap.fromTo(
     scrollTrigger: {
       scrub: 1,
 
-      start: "20%",
-      end: "50%",
+      start: "30%",
+      end: "70%",
     },
     onComplete: () => {
       gsap.to(".anim-text", { opacity: 0 });
