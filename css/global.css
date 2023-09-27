@@ -29,11 +29,13 @@
 /* ESTILOS PRINCIPAIS ========================== */
 
 * {
+  
     padding: 0;
     box-sizing: border-box;
 
     font-family: 'Orbitron', sans-serif;
     font-size: 1.6rem;
+
 }
 
 body {
