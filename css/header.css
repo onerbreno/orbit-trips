@@ -57,6 +57,7 @@
 
 .hero-intro h1 {
 
+    font-size: 4.375rem;
     font-weight: 500;
     font-family: 'Orbitron';
     color: white;
@@ -64,11 +65,14 @@
     overflow: hidden;
     white-space: nowrap;
     margin: 0 auto;
-    animation:
-        typing 2.5s steps(40, end);
+    animation: typing 2.5s steps(40, end);
+    white-space: wrap;
+
 }
 
 .hero-intro p {
+    white-space: wrap;
+
     line-height: 1.5;
 
     color: rgba(255, 255, 255, 0.67);
@@ -100,10 +104,6 @@
     margin-top: 5vh;
 }
 
-.hero-intro h1, p{
-    font-size: 1.2rem;
-    white-space: wrap;
-}
 
 
 @keyframes typing {
@@ -187,9 +187,7 @@
         margin-top: 20vh;
         position: relative;
     }
-    .hero-intro h1, p {
-        font-size: 1.4rem;
-    }
+
     .hero-mouse{
         display: none;
     }
@@ -197,9 +195,6 @@
 
 @media screen and (min-width: 900px){
 
-    .hero-intro h1{
-        font-size: 2.4rem;
-    }
     .hero-intro p {
         font-size: 1.9rem;
     }
@@ -209,9 +204,6 @@
 }
 
 @media screen and (min-width: 1800px) {
-    .hero-intro h1 {
-        font-size: 4.375rem;
-    }
 
     .hero-intro p {
         font-size: 1.5rem;
