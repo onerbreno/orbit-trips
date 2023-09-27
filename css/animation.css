@@ -1,0 +1,56 @@
+canvas {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.anim-text {
+    position: fixed;
+    z-index: 2;
+    color: white;
+    width: 100%;
+    bottom: 40%;
+}
+
+.anim-title,
+.anim-desc,
+.anim-btn {
+    text-align: center;
+    
+}
+
+.anim-title {
+    font-size: 70px;
+    letter-spacing: 10.5px;
+    font-weight: 700;
+}
+
+.anim-desc {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.anim-btn {
+    cursor: pointer;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    border: 2px solid white;;
+}
+
+@media screen and (max-width: 1024px) {
+    .anim-text {
+        font-size: 2rem;
+        right: 50%;
+        bottom: 25%;
+        transform: translate(50%, 50%);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}
