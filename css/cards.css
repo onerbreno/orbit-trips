@@ -212,12 +212,12 @@
     }
     
     .card-header h3 {
-        font-size: 27px;
+        font-size: 1.688rem;
         text-align: center;
     }
     
     #first-span {
-        font-size: 35px;
+        font-size: 2.188rem;
         display: block;
     }
 
@@ -252,7 +252,7 @@
     }
     
     .cardSection article {
-        width: 800px;
+        padding: 1.75rem;
         height: max-content;
     }
     

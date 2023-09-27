@@ -58,7 +58,7 @@
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .title-introduction-section {
-        font-size: 1.125rem;
+        font-size: 2.125rem;
     }
 
     #introduction-section {
@@ -71,9 +71,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .title-introduction-section {
-        font-size: 1.125rem;
-    }
+
     
     #introduction-section {
         padding: 0 6rem;
