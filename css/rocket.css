@@ -9,6 +9,8 @@
 
     background-image: url(../svg/Stars3.svg);
     /* background: linear-gradient(var(--space-color) 70%, rgba(16, 52, 94, 0.623) 200%); */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #rocket hr {

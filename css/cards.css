@@ -8,6 +8,8 @@
 
 
     background-image: url(../svg/Stars2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .cardSection h2 {

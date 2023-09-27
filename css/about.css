@@ -10,6 +10,8 @@
 
 
     background-image: url(../svg/Stars4.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sobre-nos hr {
