@@ -9,16 +9,14 @@
     <link rel="shortcut icon" href="./svg/OrbitTravel.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
     <link rel="stylesheet" href="./css/nav.css">
-
-    <link rel="stylesheet" href="./css/animation.css">
-
     <link rel="stylesheet" href="./css/intro.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/rocket.css">
     <link rel="stylesheet" href="./css/cards.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -34,45 +32,71 @@
                 <a href="#sobre_nos">SOBRE NÓS</a>
                 <a href="#preços">PREÇOS</a>
                 <a href="foguete">FOGUETE</a>
-                <button class="mobile-button">&#9776;</button>
+                <button class="mobile-button"><img src="./svg/ic_baseline-menu.svg" alt=""></button>
                 <button class="orbit-button">VOE PARA O ESPAÇO</button>
             </span>
         </nav>
-        <section>
+    </header>
 
-            <div class="img-div">
-                <img draggable="false" class="foguete" src="./img/foguete2.png" alt="">
+    <main class="container">
+        <section class="hero-section">
+            <div class="content">
+                <article class="hero-intro">
+                    <hgroup draggable="false">
+                        <h1 class="hero-title">
+                            _Explore novos horizontes!
+                        </h1>
+
+                        <p class="hero-description">Bem-vindo à revolução das viagens interplanetárias! A revolução das viagens interplanetárias!
+                        </p>
+                    </hgroup>
+                    <button class="outline-button">VOE AO ESPAÇO</button>
+                </article>
             </div>
-            <article class="hero-intro">
-                <hgroup draggable="false">
-                    <h1>
-                        _Explore novos horizontes!</h1>
-                    </h1>
 
-                    <p>Bem-vindo à revolução das viagens <br> interplanetárias!</p>
-                </hgroup>
-                <button>VOE PARA ESPAÇO</button>
-
-                <div class="hero-mouse">
-
-                    <img src="./svg/bi_mouse.svg" alt="Mouse">
-
-                    <img src="./svg/ph_arrow-up-bold.svg" alt="Arrow down">
+            <div class="hero-footer-container">
+                <div class="content hero-footer-content">
+                    <p class="info-badge-list-title">Confira os números das nossas missões espaciais</p>
+                    <ul class="info-badge-list">
+                        <li class="info-badge">
+                            <div class="info-badge-icon-container">
+                                <img src="./svg/rocket.svg" alt="">
+                            </div>
+                            <div class="info-badge-content">
+                                <strong>+50 mil</strong>
+                                <p>
+                                    Lançamentos
+                                </p>
+                            </div>
+                        </li>
+                        <li class="info-badge">
+                            <div class="info-badge-icon-container">
+                                <img src="./svg/ph_shooting-star.svg" alt="">
+                            </div>
+                            <div class="info-badge-content">
+                                <strong>+100 mil</strong>
+                                <p>
+                                    Novos astronautas
+                                </p>
+                            </div>
+                        </li>
+                        <li class="info-badge">
+                            <div class="info-badge-icon-container">
+                                <img src="./svg/rain.svg" alt="">
+                            </div>
+                            <div class="info-badge-content">
+                                <strong>100%</strong>
+                                <p>
+                                    Satisfação
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
 
                 </div>
-            </article>
-        </section>
-    </header>
-    <main class="container">
-
-        <section class="anim-section">
-            <div class="anim-text">
-                <h2 class="anim-title">_UMA EXPERIÊNCIA</h2>
-                <h3 class="anim-desc">Bem-vindo à revolução das viagens interplanetárias! A revolução das viagens interplanetárias!</h3>
-                <button class="anim-btn">VOE AO ESPAÇO</button>
             </div>
-            <canvas class="canvas"></canvas>
         </section>
+
         <section id="introduction-section">
             <h1 class="title-introduction-section">Reserve Sua Viagem Espacial Agora!</h1>
             <div class="wrapper-introduction-section">
@@ -299,24 +323,9 @@
             </div>
         </div>
     </div>
+
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-        new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-
-    <!-- ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
-        integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-    <script src="./js/animateOnScroll.js"></script>
-    <script src="./js/app.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,290 @@
+.hero-section {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  height: 1092px;
+  padding-top: 110px;
+  background-color: var(--space-color);
+  background-image: url("../svg/Stars.svg");
+  background-image: url(../img/background-rocket.png);
+  background-position: 0 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.hero-intro {
+  display: flex;
+  margin-top: -20rem;
+
+  flex-direction: column;
+  max-width: 769px;
+
+  gap: 3rem;
+}
+
+.hero-mouse {
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.hero-intro hgroup {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero-title {
+  font-size: 4.375rem;
+  font-weight: 500;
+  letter-spacing: 0.21875rem;
+
+  font-family: 'Orbitron';
+  color: white;
+  /* animation: typing 2.5s steps(40, end); */
+}
+
+.hero-description {
+  max-width: 500px;
+
+  font-family: 'Inter';
+
+  font-size: 1.5rem;
+  line-height: 1.5;
+
+  color: #FFFFFF;
+}
+
+.hero-intro>button {
+  width: min-content;
+}
+
+.hero-footer-container {
+  position: absolute;
+
+  bottom: 0;
+
+  background: rgba(217, 217, 217, 0.02);
+  box-shadow: -18.8px 18.8px 18.8px 0px rgba(255, 255, 255, 0.02) inset, 18.8px -18.8px 18.8px 0px rgba(165, 165, 165, 0.02) inset;
+  backdrop-filter: blur(18.799999237060547px);
+  width: 100%;
+}
+
+.hero-footer-content {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 2.5rem 0 2.5rem;
+}
+
+.info-badge-list-title {
+  color: var(--white, #FFF);
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+
+.info-badge-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.info-badge {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.info-badge-content {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.info-badge strong {
+  font-family: Orbitron;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.78006rem; /* 79.113% */
+  letter-spacing: -0.0225rem;
+}
+
+.info-badge-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  border: 1px solid #FFFFFF;
+}
+
+
+.logo-title {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .info-badge-list li:nth-child(2) {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .info-badge-list li:last-child {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .info-badge-list {
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    gap: 0;
+  }
+
+  .info-badge-list li:last-child {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .info-badge-list-title {
+    display: none;
+  }
+
+  .info-badge-list {
+    width: auto;
+    /* justify-content: space-evenly; */
+    margin: 0 auto;
+    gap: 2rem;
+  }
+
+}
+
+
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+@keyframes rocketup {
+  0% {
+    opacity: 10%;
+    margin: 0 auto;
+  }
+
+  100% {
+    opacity: 100%;
+    margin: -10% auto;
+  }
+}
+
+@keyframes tilt {
+  0% {
+    transform: rotate(1deg);
+  }
+
+  50% {
+    transform: rotate(0.5deg);
+  }
+
+  75% {
+    transform: rotate(1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes shine {
+  0% {
+    opacity: 0.80;
+  }
+
+  25% {
+
+    opacity: 0.87;
+  }
+
+  50% {
+
+    opacity: 0.95;
+  }
+
+  75% {
+
+    opacity: 0.87;
+  }
+
+  100% {
+
+    opacity: 0.80;
+  }
+}
+
+/* 
+@media screen and (min-width: 600px) and (orientation: portrait), (min-height: 600px) and (orientation:landscape){
+  
+  .foguete{
+      display:inline-block;
+  }
+  
+  .hero-intro{
+      margin-top: 20vh;
+      position: relative;
+  }
+  .hero-intro h1, p {
+      font-size: 1.4rem;
+  }
+  .hero-mouse{
+      display: none;
+  }
+}
+
+@media screen and (min-width: 900px){
+
+  .hero-intro h1{
+      font-size: 2.4rem;
+  }
+  .hero-intro p {
+      font-size: 1.9rem;
+  }
+  .hero-mouse {
+      display: flex;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .hero-intro h1 {
+      font-size: 4.375rem;
+  }
+
+  .hero-intro p {
+      /* font-size: 1.5rem;
+  }
+} */
