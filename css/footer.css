@@ -124,15 +124,12 @@
  #footer-3 form button {
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 100px;
+    width: 150px;
     padding: 5px 20px 5px;
     background-color: transparent;
     color: #FFF;
+    border: 1px solid var(--bg-primary);
     border-color: var(--txt-title);
- }
-
- #footer-3 form button {
-    cursor: pointer;
  }
 
 @media (min-width: 320px) and (max-width: 425px) {
