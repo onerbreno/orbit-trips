@@ -3,8 +3,10 @@ function animateOnScroll(canvasID, videoInfo) {
   const canvasContext = canvas.getContext("2d");
 
   // Configuração da altura e largura do canvas
-  canvas.height = window.innerHeight
-  canvas.width  = window.innerWidth
+  canvas.height = screen.height;
+  canvas.width  = screen.width;
+
+  document.documentElement.style.overflowX = 'hidden';
 
   // Carrega as imagens
   for (let i = 0; i <= videoInfo.totalFrames; i++) {
