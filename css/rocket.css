@@ -1,12 +1,20 @@
 #rocket {
-    min-height: 100vh;
+    min-height: 110vh;
     padding: 5rem 20rem;
+
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    /* background-image: url(../svg/Stars.svg); */
+    background-image: url(../svg/Stars.svg);
+    /* background: linear-gradient(var(--space-color) 70%, rgba(16, 52, 94, 0.623) 200%); */
+}
+
+#rocket hr {
+    margin: 2rem auto;
+    width: 100%;
+    border-style: dashed;
 }
 
 .title-rocket {
@@ -27,7 +35,7 @@
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .img-rocket {
@@ -39,11 +47,14 @@
 .wrapper-dedscription-rocket {
     display: flex;
     flex-direction: column;
+    padding: 5rem 0;
 }
 
 .description-rocket {
-    font-size: 3rem;
-    font-weight: 700;
+    font-family: 'Montserrat';
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 1.5;
 }
 
 @media (min-width: 1200px) and (max-width: 1919px) {
@@ -58,17 +69,16 @@
     #rocket {
         padding: 0 10rem;
     }
+
     .wrapper-rocket {
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
     }
     
     .img-rocket {
         width: 45rem;
     }
     
-    .description-rocket {
-        font-size: 2.5rem;
-    }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -86,15 +96,12 @@
     }
     
     .wrapper-rocket {
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
     }
     
     .img-rocket {
         width: 45rem;
-    }
-    
-    .description-rocket {
-        font-size: 2rem;
     }
 }
 
@@ -113,16 +120,14 @@
     }
 
     .wrapper-rocket {
-        gap: 2rem;
+        display: flex;
+        flex-direction: column;
     }
     
     .img-rocket {
         width: 40rem;
     }
     
-    .description-rocket {
-        font-size: 2rem;
-    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -140,7 +145,6 @@
     }
     
     .wrapper-rocket {
-        gap: 2rem;
         display: flex;
         flex-direction: column;
     }
@@ -149,9 +153,7 @@
         width: 40rem;
     }
     
-    .description-rocket {
-        font-size: 2rem;
-    }
+
 }
 
 @media (max-width: 480px) {
@@ -169,7 +171,6 @@
     }
     
     .wrapper-rocket {
-        gap: 2rem;
         display: flex;
         flex-direction: column;
     }
@@ -178,7 +179,4 @@
         width: 35rem;
     }
     
-    .description-rocket {
-        font-size: 1.6rem;
-    }
 }
