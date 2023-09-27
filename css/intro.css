@@ -1,5 +1,5 @@
 #introduction-section {
-    min-height: 100vh;
+    min-height: 120vh;
     padding: 5rem 20rem;
 
     display: flex;
@@ -7,7 +7,7 @@
     justify-content: center;
 
 
-    background-image: url(../svg/Stars.svg);
+    background-image: url(../svg/Stars5.svg);
 }
 
 #introduction-section hr {
