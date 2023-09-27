@@ -22,19 +22,17 @@
         --bg-primary: #080808;
         --txt-primary: #fff;
 
-        font-size: 62.5%;
     }
 }
 
 /* ESTILOS PRINCIPAIS ========================== */
 
 * {
-  
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 
     font-family: 'Orbitron', sans-serif;
-    font-size: 1.6rem;
 
 }
 
