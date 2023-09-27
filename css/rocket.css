@@ -19,14 +19,14 @@
 
 .title-rocket {
     text-align: start;
-    font-size: 6rem;
+    font-size: 3.75rem;
 
     border-bottom: 5px solid var(--txt-title);
     margin-bottom: 8rem;
 }
 
 .title-rocket span {
-    font-size: 6rem;
+    font-size:3.75rem;
     color: var(--txt-title);
 }
 
