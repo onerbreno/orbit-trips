@@ -41,7 +41,7 @@ gsap.fromTo(
       scrub: 1,
 
       start: "30%",
-      end: "0.001%",
+      end: "0.0001%",
     },
     
     onComplete: () => {
