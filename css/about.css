@@ -28,7 +28,6 @@
 
 .sobre-nos > .text-wrapper span {
     color: var(--txt-title);
-    font-size: 1.1em;
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -38,40 +37,47 @@
 
 .sobre-nos > .text-wrapper p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 4rem;
+    /* font-size: 4rem; */
     margin-top: 1em;
+    word-spacing: 1px;
 }
-
-
 
 .sobre-nos > .img img {
     width: 100%;
     height: auto;
+
     min-width: 50vh;
 
     border: 1px solid var(--txt-title);
     box-shadow: 2px 3px 2px rgba(0,0,0,0.4);
 }
 
-@media screen and (max-width: 1440px) {
-    .sobre-nos > .text-wrapper {
-        font-size: .7em;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .sobre-nos {
         flex-direction: column;
+        padding: 0;
+        margin: 0;
     }
+
 
     .sobre-nos > .text-wrapper {
         padding-right: 2em;
     }
-
-    .sobre-nos > .img {
+    
+    .sobre-nos > .text-wrapper h1 {
+        font-size: 2rem;
         text-align: center;
-        width: 100%;
     }
+
+    .sobre-nos > .text-wrapper p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        margin-top: 1em;
+        word-spacing: 1px;
+        text-align: justify;
+        margin-left: 30px;
+    }
+
 }
 
 .intro-font{
