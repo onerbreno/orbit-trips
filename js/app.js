@@ -43,6 +43,7 @@ gsap.fromTo(
       start: "30%",
       end: "0.001%",
     },
+    
     onComplete: () => {
       gsap.to(".anim-text", { opacity: 0 });
     },
