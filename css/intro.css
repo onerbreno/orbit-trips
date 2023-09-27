@@ -8,6 +8,8 @@
 
 
     background-image: url(../svg/Stars5.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #introduction-section hr {
