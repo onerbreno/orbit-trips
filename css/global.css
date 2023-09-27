@@ -12,7 +12,7 @@
     --txt-title: #0057FF;
 
     /* CORES QUE NÃO SERÃO ALTERADAS NO DARK/LIGHT MODE*/
-    --space-color: #080808;
+    --space-color: #070A0F;
 
     /* VARIÁVEIS BOTÃO */
     --btn-accent: #0557FF;
@@ -21,7 +21,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-primary: #000;
+        --bg-primary: #070A0F;
         --txt-primary: #fff;
     }
 }
@@ -34,6 +34,7 @@
 }
 
 body {
+    font-size: 1rem;
     background-color: var(--bg-primary);
     color: var(--txt-primary);
 
@@ -66,3 +67,59 @@ button:hover {
     /* outline: 2px solid var(--btn-accent); */
     color: white;
 }
+
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    .content {
+        padding: 1.5rem;
+    }
+
+}
+
+@media (min-width: 576px) {
+    .content {
+        max-width: 540px;
+    }
+
+}
+
+
+@media (min-width: 992px) {
+    .content {
+        max-width: 960px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .content {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .content {
+        max-width: 1320px;
+    }
+}
+
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 87.5%; /* Reduzir o tamanho da fonte para 87.5% em telas menores */
+    }
+}
+
+/* Estilos para telas muito pequenas */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 75%; /* Reduzir ainda mais o tamanho da fonte para 75% em telas muito pequenas */
+    }
+}
+
+

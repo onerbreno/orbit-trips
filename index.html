@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orbit Travel | Viagens interstelares </title>
+    <title>Orbit Trip</title>
     <link rel="stylesheet" href="./css/global.css">
     <link rel="shortcut icon" href="./svg/OrbitTravel.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/header.css">
@@ -13,7 +13,7 @@
 
 <body>
     <header class="header">
-        <nav class="nav">
+        <nav class="nav content">
 
             <span>
                 <a class="logo" href="./index.html"><img width="104" height="22" src="./img/logo2_nobackground.png"
@@ -26,65 +26,69 @@
                 <a href="#sobre_nos">SOBRE NÓS</a>
                 <a href="#preços">PREÇOS</a>
                 <a href="foguete">FOGUETE</a>
-                <button class="mobile-button">&#9776;</button>
+                <button class="mobile-button"><img src="./svg/ic_baseline-menu.svg" alt=""></button>
                 <button class="orbit-button">VOE PARA O ESPAÇO</button>
             </span>
         </nav>
     </header>
+
     <main class="container">
         <section class="hero-section">
             <div class="content">
                 <article class="hero-intro">
                     <hgroup draggable="false">
-                        <h1>
+                        <h1 class="hero-title">
                             _Explore novos horizontes!
                         </h1>
 
-                        <p>Bem-vindo à revolução das viagens interplanetárias! A revolução das viagens interplanetárias!
+                        <p class="hero-description">Bem-vindo à revolução das viagens interplanetárias! A revolução das viagens interplanetárias!
                         </p>
                     </hgroup>
                     <button class="outline-button">VOE AO ESPAÇO</button>
                 </article>
             </div>
 
-            <div class="hero-footer">
+            <div class="hero-footer-container">
                 <div class="content hero-footer-content">
-
-                    <p>Confira os números das nossas missões espaciais</p>
-                    <div class="badges">
-
-                        <div class="badge">
-                            <div class="bagde-icon-container">i</div>
-                            <div>
+                    <p class="info-badge-list-title">Confira os números das nossas missões espaciais</p>
+                    <ul class="info-badge-list">
+                        <li class="info-badge">
+                            <div class="info-badge-icon-container">
+                                <img src="./svg/rocket.svg" alt="">
+                            </div>
+                            <div class="info-badge-content">
                                 <strong>+50 mil</strong>
                                 <p>
                                     Lançamentos
                                 </p>
                             </div>
-                        </div>
-                        <div class="badge">
-                            <div class="bagde-icon-container">i</div>
-                            <div>
-                                <strong>+50 mil</strong>
+                        </li>
+                        <li class="info-badge">
+                            <div class="info-badge-icon-container">
+                                <img src="./svg/ph_shooting-star.svg" alt="">
+                            </div>
+                            <div class="info-badge-content">
+                                <strong>+100 mil</strong>
                                 <p>
-                                    Lançamentos
+                                    Novos astronautas
                                 </p>
                             </div>
-                        </div>
-                        <div class="badge">
-                            <div class="bagde-icon-container">i</div>
-                            <div>
-                                <strong>+50 mil</strong>
+                        </li>
+                        <li class="info-badge">
+                            <div class="info-badge-icon-container">
+                                <img src="./svg/rain.svg" alt="">
+                            </div>
+                            <div class="info-badge-content">
+                                <strong>100%</strong>
                                 <p>
-                                    Lançamentos
+                                    Satisfação
                                 </p>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
 
                 </div>
             </div>
-
 
             <!-- <div class="hero-mouse">
     
@@ -106,6 +110,7 @@
             </div>
         </div>
     </div>
+    
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
