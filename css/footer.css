@@ -1,13 +1,33 @@
+.footer{
+    background-color: rgb(19, 18, 20);
+    color: white;
+
+}
+
 #footer-1 {
+    background-color: var(--space-color);
+    background-image: url(../svg/Stars.svg);
+
+    width: 100vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-size: 12px;
+    
+    min-height: 60vh;
+
+    border-right: 2px inset rgba(255, 255, 255, 0.342);
+
 }
 
 .copy {
     display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.5rem;
 }
 
 .copy ul li {
@@ -19,26 +39,27 @@
 }
 
 #footer-2 {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size: 1rem;
 }
 
 #footer-2 ul li{
+    font-size: 1.5rem;
     margin-bottom: 5px;
 }
 
 #footer-2 ul li :hover{
- font-weight: bold;
+    color: var(--txt-title);
 }
 
 #footer-3 {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   font-size: 12px;
+    margin-right: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -50,9 +71,6 @@
 
 .social span {
     margin-left: 6px ;
-}
-
-.social span :hover{
     cursor: pointer;
 }
 
@@ -66,7 +84,7 @@
 }
 .footerSection article ul {
     list-style: none;
-
+    
 }
 
 .footerSection article ul li a{
@@ -107,6 +125,7 @@
  #footer-3 p {
     text-align: center;
     margin-bottom: 10px;
+    font-family: var(--font-text);
  }
 
 .terms {
@@ -135,46 +154,48 @@
     cursor: pointer;
  }
 
-@media (min-width: 320px) and (max-width: 425px) {
+@media (min-width: 320px) and (max-width: 768px) {
     .footerSection {
         display: flex; 
         flex-direction: column;   
         justify-content: center;
+        gap: 50px;
     }
     
     .copy {
         display: flex;
         flex-direction: column;
     }
-
+    
     .copy p {
         order: 2;
         padding-bottom: 0px;
-
+        
     }
-
+    
     .footerSection article {
         width: 96vw ;
     }
     
+    #footer-1, #footer-2, #footer-3{
+        min-height: 35vh;
+    }
+
     #footer-1 {
+        border-top:  2px inset rgba(255, 255, 255, 0.342);
+        border-left: none;
+        width: 100%;
         order: 3;
         display: flex;
         flex-direction: column;
         font-size: 12px;
+        /* display: none; */
     }
-
+    
     #footer-2 {
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        padding-left: 6vw;
-        padding-top: 2vh;
-        font-size: 16px;
-     }
-
+        display: none;
+    }
+    
      #footer-3 {
         display: flex;
         flex-direction: column;
@@ -195,6 +216,7 @@
     #footer-1 p{
     order: 2;
     }
+
 }
 
 @media (min-width: 1368px) and (max-width: 1920px){
@@ -204,28 +226,36 @@
     }
 
     #footer-2 {
-        font-size: 18px;
+        font-size: 1.125rem;
+    }
+
+    #footer-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     #footer-3 h3 {
-        font-size: 25px;
+        font-size: 1.563rem;
     }
 
     #footer-3 p {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     #footer-3 label[for="email"] {
-        font-size: 16px;
+        font-size: 2rem;
     }
 
     #footer-3  label[for="checkbox"] {
-        font-size: 14px;
-        margin-bottom: 15px;
+        font-size: 0.875;
+        margin-bottom: 0.938rem;
     }
 
     #footer-3 button[type="button"] {
-        font-size: 18px;
+        font-size: 1.125rem;
         width: 200px;
     }
 

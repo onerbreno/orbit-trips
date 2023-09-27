@@ -1,10 +1,23 @@
 #introduction-section {
-    padding: 0 20rem;
+    min-height: 100vh;
+    padding: 5rem 20rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    background-image: url(../svg/Stars.svg);
+}
+
+#introduction-section hr {
+    margin: 2rem auto;
+    width: 100%;
+    border-style: dashed;
 }
 
 .title-introduction-section {
-    text-align: start;
-    font-size: 6rem;
+    font-size: 3.5rem;
 
     margin-bottom: 8rem;
     
@@ -24,9 +37,10 @@
 }
 
 .description-introduction-section {
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 1.125rem;
+    font-family: var(--font-text);
 }
+
 
 @media (min-width: 1200px) and (max-width: 1919px) {
     #introduction-section {
@@ -34,17 +48,17 @@
     }
 
     .description-introduction-section {
-        font-size: 3rem;
+        font-size: 1.125rem;
     }
 
     .title-introduction-section {
-        font-size: 5rem;
+        font-size: 1.125rem;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
     .title-introduction-section {
-        font-size: 4rem;
+        font-size: 2.125rem;
     }
 
     #introduction-section {
@@ -52,14 +66,12 @@
     }
 
     .description-introduction-section {
-        font-size: 2rem;
+        font-size: 1.125rem;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .title-introduction-section {
-        font-size: 3rem;
-    }
+
     
     #introduction-section {
         padding: 0 6rem;
@@ -70,13 +82,13 @@
     }
 
     .description-introduction-section {
-        font-size: 2rem;
+        font-size: 1.125rem;
     }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
     .title-introduction-section {
-        font-size: 2.5rem;
+        font-size: 1.125rem;
         margin-bottom: 6rem;
     }
     
@@ -94,7 +106,7 @@
     }
 
     .description-introduction-section {
-        font-size: 2rem;
+        font-size: 1.125rem;
     }
 }
 
@@ -118,6 +130,6 @@
     }
 
     .description-introduction-section {
-        font-size: 1.6rem;
+        font-size: 1.125rem;
     }
 }
