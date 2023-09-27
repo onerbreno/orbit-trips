@@ -39,11 +39,6 @@ body {
 
 }
 
-.logo-title{
-    font-family: 'Orbitron', sans-serif;
-    color: var(--txt-title);
-}
-
 /* Botão padrão */
 button {
     cursor: pointer;
