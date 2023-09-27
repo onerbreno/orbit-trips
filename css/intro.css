@@ -38,7 +38,7 @@
 
 .description-introduction-section {
     font-size: 1.125rem;
-    font-family: 'Montserrat';
+    font-family: var(--font-text);
 }
 
 

@@ -126,7 +126,7 @@
  #footer-3 p {
     text-align: center;
     margin-bottom: 10px;
-    font-family: 'Montserrat';
+    font-family: var(--font-text);
  }
 
 .terms {

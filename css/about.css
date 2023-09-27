@@ -32,7 +32,7 @@
 }
 
 .sobre-nos > .text-wrapper p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-text);
     margin-top: 1em;
     word-spacing: 1px;
 }
@@ -65,7 +65,7 @@
     }
 
     .sobre-nos > .text-wrapper p {
-        font-family: 'Montserrat', sans-serif;
+        font-family: var(--font-text);
         font-size: 1.125rem;
         margin-top: 1em;
         word-spacing: 1px;
