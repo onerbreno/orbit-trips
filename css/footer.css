@@ -52,8 +52,7 @@
 }
 
 #footer-2 ul li :hover{
-    display: none;
-    font-weight: 800;
+    color: var(--txt-title);
 }
 
 #footer-3 {
