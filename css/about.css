@@ -2,51 +2,55 @@
 .sobre-nos {
     min-height: 100vh;
     padding: 5rem 20rem;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
-
+    
     background-image: url(../svg/Stars4.svg);
     background-repeat: no-repeat;
     background-size: cover;
+
+    & hr {
+        margin: 2rem auto;
+        color: var(--txt-title);
+        width: 100%;
+        border-style: dashed;
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+    
+        min-width: 50vh;
+    
+        border: 1px solid var(--txt-title);
+        box-shadow: 2px 3px 2px rgba(0,0,0,0.4);
+    }
+    
 }
 
-.sobre-nos hr {
-    margin: 2rem auto;
-    color: var(--txt-title);
-    width: 100%;
-    border-style: dashed;
-}
 
-.sobre-nos > .text-wrapper h1 {
-    font-size: 3.5rem;
-    border-bottom: 5px solid var(--txt-title);
-    margin-bottom: 1em;
-}
+.sobre-nos > .text-wrapper {
+    
+    & > hgroup h1 {
+        font-size: 3.5rem;
+        border-bottom: 5px solid var(--txt-title);
+        margin-bottom: 1em;
+        font-family: 'Orbitron';
+    }
+    
+    & > hgroup span {
+        color: var(--txt-title);
+        font-family: var(--font-accent);
+    }
 
-
-.sobre-nos > .text-wrapper span {
-    color: var(--txt-title);
-    font-family: 'Orbitron', sans-serif;
-}
-
-.sobre-nos > .text-wrapper p {
-    font-family: var(--font-text);
-    margin-top: 1em;
-    word-spacing: 1px;
-}
-
-.sobre-nos > .img img {
-    width: 100%;
-    height: auto;
-
-    min-width: 50vh;
-
-    border: 1px solid var(--txt-title);
-    box-shadow: 2px 3px 2px rgba(0,0,0,0.4);
+    & > p {
+        font-family: var(--font-text);
+        margin-top: 1em;
+        word-spacing: 1px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -56,19 +60,18 @@
         margin: 0;
     }
 
-
     .sobre-nos > .text-wrapper {
         padding-right: 2em;
     }
     
     .sobre-nos > .text-wrapper h1 {
-        font-size: 1.125rem;
+        font-size: var(--font-large);
         text-align: center;
     }
 
     .sobre-nos > .text-wrapper p {
         font-family: var(--font-text);
-        font-size: 1.125rem;
+        font-size: var(--font-small);
         margin-top: 1em;
         word-spacing: 1px;
         text-align: justify;
