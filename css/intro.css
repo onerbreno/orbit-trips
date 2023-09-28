@@ -14,44 +14,49 @@
 
     & hr {
         margin: var(--font-medium) 0;
-        width: 30%;
         border: 1px dashed var(--accent-color);
+        
     }
 
-    &>h1 {
+    & hr {
+        width: 80%;
+    }
+
+    & div > hr {
+        width: 30%;
+    }
+
+    
+    & h1.title-introduction-section {
         font-size: var(--font-xlarge);
         font-family: var(--font-accent);
-        
+
         width: 50%;
 
         margin-bottom: var(--font-large);
     }
-    
-    &>h1::after{
-        content: "";
-        border-bottom: 2px solid var(--txt-title);
-    }
 
-    & div {
+    & div.wrapper-introduction-section {
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
         gap: var(--font-medium);
 
-        & > p {
+        &>p {
             font-size: var(--font-medium);
         }
-        & > button{
+
+        &>button {
             align-self: flex-start;
         }
     }
 
-    & .intro-list{
-        
+    & .intro-list {
+
         list-style: "\27A4   ";
         color: var(--accent-color);
 
-        & > li {
+        &>li {
             color: var(--txt-primary);
             font-size: var(--font-medium);
         }
@@ -68,58 +73,41 @@
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-
-
     #introduction-section {
         padding: 0 6rem;
     }
-
-    .img-introduction-section {
-        width: 38rem;
-    }
-
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-    .title-introduction-section {
-        margin-bottom: 6rem;
-    }
-
-    .wrapper-introduction-section {
-        display: flex;
-        flex-direction: column;
-    }
-
     #introduction-section {
         padding: 0 5rem;
 
 
-        &>h1 {
+        &>h1.title-introduction-section {
             font-size: var(--font-large);
+            margin-bottom: 6rem;
         }
-    }
 
-    .img-introduction-section {
-        width: 32rem;
+        & div.wrapper-introduction-section {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
 }
 
 @media (max-width: 480px) {
-    .title-introduction-section {
-        margin-bottom: 3rem;
-    }
-
-    .wrapper-introduction-section {
-        display: flex;
-        flex-direction: column;
-    }
-
     #introduction-section {
         padding: 0 3rem;
-    }
 
-    .img-introduction-section {
-        width: 28rem;
+        & h1.title-introduction-section {
+            margin-bottom: 3rem;
+        }
+
+        & div.wrapper-introduction-section {
+            display: flex;
+            flex-direction: column;
+        }
+
     }
 }
