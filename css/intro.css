@@ -14,12 +14,9 @@
 
     & hr {
         margin: var(--font-medium) 0;
-        border: 1px dashed var(--accent-color);
+        border: 1px solid var(--accent-color);
+        width: 100%;
         
-    }
-
-    & hr {
-        width: 60%;
     }
     
     & h1.title-introduction-section {
@@ -63,29 +60,15 @@
     }
 }
 
-
-
-
-@media (min-width: 1200px) and (max-width: 1919px) {
-    #introduction-section {
-        padding: 0 10rem;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-    #introduction-section {
-        padding: 0 6rem;
-    }
-}
-
 @media (min-width: 481px) and (max-width: 768px) {
     #introduction-section {
-        padding: 0 5rem;
+        padding: 0;
 
 
-        &>h1.title-introduction-section {
-            font-size: var(--font-large);
-            margin-bottom: 6rem;
+        & h1.title-introduction-section {
+            font-size: var(--font-medium);
+            text-align: center;
+            width: 100%;
         }
 
         & div.wrapper-introduction-section {

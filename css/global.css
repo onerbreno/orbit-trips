@@ -80,6 +80,18 @@ button {
     }
 }
 
+ul {
+
+    list-style: "\27A4   ";
+    color: var(--accent-color);
+    
+    &>li {
+        color: var(--txt-primary);
+        font-size: var(--font-medium);
+    }
+    
+}
+
 button.btn-solid{
     font-family: var(--font-accent);
     border: 1px solid var(--accent-color);
@@ -94,12 +106,16 @@ button.btn-solid{
 
 hr {
     margin: var(--font-medium) 0;
-    border: 1px dashed var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 .text-accent {
     font-family: 'Orbitron', sans-serif;
     color: var(--text-accent-color);
+
+    &:hover{
+        color: var(--txt-primary);
+    }
 }
 
 .content {
