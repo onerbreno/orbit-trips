@@ -19,13 +19,8 @@
     }
 
     & hr {
-        width: 80%;
+        width: 60%;
     }
-
-    & div > hr {
-        width: 30%;
-    }
-
     
     & h1.title-introduction-section {
         font-size: var(--font-xlarge);
@@ -41,6 +36,11 @@
         flex-flow: column nowrap;
         justify-content: space-between;
         gap: var(--font-medium);
+
+        background: linear-gradient(rgba(15, 46, 70, 0.9), rgba(0,0,0,0));
+        padding: var(--font-large);
+
+        width: fit-content;
 
         &>p {
             font-size: var(--font-medium);
