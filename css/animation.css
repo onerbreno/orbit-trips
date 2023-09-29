@@ -1,56 +1,111 @@
-canvas {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-}
+@import './global.css';
 
-.anim-text {
-    position: fixed;
-    z-index: 2;
-    color: white;
+/* ------------  SECTION STYLING ------------  */
+.section-anim {
     width: 100%;
-    bottom: 40%;
+    min-height: 100vh;
+    background: var(--bg-primary);
+    color: var(--txt-primary);
 }
 
-.anim-title,
-.anim-desc,
-.anim-btn {
+/* ------------ SCROLL SECTIONS ------------ */
+.scroll-section {
+    width: 100%;
+    height: calc(100vh - 44px);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Canvas Element */
+.canvas-elem {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+/* Main & Message Element Positioning */
+.msg-elem {
+  width: max-content;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 5;
+}
+.msg-elem {
+  transform: translate(-50%, 0%);
+  opacity: 0;
+}
+
+/* SECTION */
+.section-anim .canvas-elem canvas {
+    width: 100%;
+}
+
+/* ------------  LAYOUT STYLING ------------  */
+
+/* Message Element */
+.msg-elem h2, h3, button {
     text-align: center;
-    
+    color: white;
 }
 
-.anim-title {
+.msg-elem h2 {
     font-size: 70px;
     letter-spacing: 10.5px;
     font-weight: 700;
+    font-family: 'Orbitron';
 }
 
-.anim-desc {
+.msg-elem h3 {
     font-size: 24px;
     font-weight: 400;
+    line-height: 34px;
+    font-style: normal;
+    font-family: 'Inter';
 }
 
-.anim-btn {
+/* Button Element */
+.msg-elem button {
+    font-family: 'Orbitron';
     cursor: pointer;
     position: absolute;
     font-size: 16px;
     font-weight: 700;
     margin-top: 30px;
-    left: 50%;
     transform: translateX(-50%);
+    align-content: center;
     background-color: transparent;
-    border: 2px solid white;;
+    border: 2px solid white;
+    transition: all 0.5s;
 }
 
-@media screen and (max-width: 1024px) {
-    .anim-text {
-        font-size: 2rem;
-        right: 50%;
-        bottom: 25%;
-        transform: translate(50%, 50%);
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
+.msg-elem button:hover {
+    transform: translateX(-50%) scale(1.1);
+    color: black;
 }
+
+/* Button Animation */
+.msg-elem button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: -1;
+    transform-origin: bottom;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleY(0);
+    transition: all 0.5s;
+}
+
+.msg-elem button:hover::before {
+    transform: scaleY(1);
+}
+

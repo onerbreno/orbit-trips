@@ -96,13 +96,15 @@
                 </div>
             </div>
         </section>
-        <section class="anim-section">
-            <div class="anim-text">
-                <h2 class="anim-title">_UMA EXPERIÊNCIA</h2>
-                <h3 class="anim-desc">Um novo horizonte está aberto para a humanidade!</h3>
-                <button class="anim-btn">VOE AO ESPAÇO</button>
+        <section class="section-anim scroll-section spaceship">
+            <div class="msg-elem">
+                <h2>_UMA EXPERIÊNCIA</h2>
+                <h3>Bem-vindo à revolução das viagens interplanetárias! A revolução das viagens interplanetárias!</h3>
+                <button>VOE AO ESPAÇO</button>
             </div>
-            <canvas class="canvas"></canvas>
+            <div class="canvas-elem">
+                <canvas id="spaceship"></canvas>
+            </div>
         </section>
 
         <section id="introduction-section">
@@ -362,17 +364,18 @@
     </script>
 
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-    <!-- ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
-        integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-    <script src="./js/animateOnScroll.js"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+
+    <!-- ScrollMagic CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    </script>
+
+
+    <!-- JS Files -->
     <script src="./js/app.js"></script>
 
 </body>
