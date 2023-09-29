@@ -27,8 +27,6 @@
 .nav {
     box-sizing: border-box;
     height: 7.5rem;
-    /* width: 100%; */
-    /* margin: 0 auto; */
 
     display: flex;
     justify-content: space-between;
@@ -99,9 +97,6 @@
         gap: 2rem;
     }
 
-    /* .nav>span:nth-of-type(1) {
-        justify-content: center;
-    } */
 
     .nav>span:nth-of-type(2) {
         justify-content: end;
@@ -109,17 +104,6 @@
 }
 
 @media screen and (min-width: 600px) {
-
-    /* .nav {
-        justify-content: center;
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-    .nav>span:first-of-type {
-        justify-content: left;
-    } */
-
     .orbit-button {
         display: inline;
     }
@@ -139,11 +123,6 @@
 
     margin: 0;
     padding: 0;
-    /* margin-bottom: .5rem; */
-
-    
-
-
 }
 
 .mobile-button img {
@@ -151,8 +130,5 @@
 }
 
 .mobile-button:hover {
-    /* outline: none; */
     background-color: transparent;
 }
-
-/* ----------------------------- */

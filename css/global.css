@@ -9,6 +9,7 @@
 
     --bg-primary: #fff;
     --txt-primary: #000;
+    --accent-color: #0557FF;
     --txt-title: #0057FF;
 
     /* CORES QUE NÃO SERÃO ALTERADAS NO DARK/LIGHT MODE*/
@@ -16,6 +17,21 @@
 
     /* VARIÁVEIS BOTÃO */
     --btn-accent: #0557FF;
+
+    --font-accent: 'Orbitron', sans-serif;
+    --font-normal: 'Inter', sans-serif;
+    --text-accent-color: #0057FF;
+
+    --font-small: 1.125rem; /* 18px */
+    --font-medium: 1.5rem; /* 24px */
+    --font-large: 2.5rem; /* 40px */
+    --font-xlarge: 3.5rem; /* 56px */
+
+    /* Referência de telas */
+    --screen-small: 576px;
+    --screen-medium: 768px;
+    --screen-large: 992px;
+    --screen-xlarge: 1200px;
 
 }
 
@@ -29,20 +45,17 @@
 /* ESTILOS PRINCIPAIS ========================== */
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    font-family: var(--font-normal);
+    font-size: var(--font-normal);
     margin: 0;
 }
 
 body {
-    font-size: 1rem;
+    
     background-color: var(--bg-primary);
     color: var(--txt-primary);
 
-}
-
-.logo-title {
-    font-family: 'Orbitron', sans-serif;
-    color: #0057FF;
 }
 
 /* Botão padrão */
@@ -54,18 +67,55 @@ button {
     background-color: transparent;
     color: white;
 
-    font-family: 'Orbitron';
+    font-family: var(--txt);
     font-weight: 700;
 
     border: 1px solid white;
     white-space: nowrap;
+
+    &:hover{
+        background-color: var(--btn-accent);
+        border: 1px solid transparent;
+        color: white;
+    }
 }
 
-button:hover {
-    background-color: var(--btn-accent);
-    border: 1px solid transparent;
-    /* outline: 2px solid var(--btn-accent); */
-    color: white;
+ul {
+
+    list-style: "\27A4   ";
+    color: var(--accent-color);
+    
+    &>li {
+        color: var(--txt-primary);
+        font-size: var(--font-medium);
+    }
+    
+}
+
+button.btn-solid{
+    font-family: var(--font-accent);
+    border: 1px solid var(--accent-color);
+    background-color: var(--accent-color);
+
+    &:hover{
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+    }
+}
+
+hr {
+    margin: var(--font-medium) 0;
+    border: 1px solid var(--accent-color);
+}
+
+.text-accent {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--text-accent-color);
+
+    &:hover{
+        color: var(--txt-primary);
+    }
 }
 
 .content {
@@ -104,6 +154,13 @@ button:hover {
 @media (min-width: 1400px) {
     .content {
         max-width: 1320px;
+    }
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 87.5%; /* Reduzir o tamanho da fonte para 87.5% em telas menores */
     }
 }
 

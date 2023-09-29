@@ -10,7 +10,6 @@
 
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" href="./css/intro.css">
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/rocket.css">
@@ -28,11 +27,11 @@
                         alt="OrbitTrips logo"></a>
             </span>
             <span class="nav-items">
-                <a href="#inicio" class="link-accent">INÍCIO</a>
-                <a href="#destaque">DESTAQUE</a>
-                <a href="#sobre_nos">SOBRE NÓS</a>
-                <a href="#preços">PREÇOS</a>
-                <a href="foguete">FOGUETE</a>
+                <a href="#hero" class="link-accent">INÍCIO</a>
+                <a href="#introduction-section">DESTAQUE</a>
+                <a href="#about">SOBRE NÓS</a>
+                <a href="#cards">PREÇOS</a>
+                <a href="#rocket">FOGUETE</a>
                 <button class="mobile-button"><img src="./svg/ic_baseline-menu.svg" alt=""></button>
                 <button class="orbit-button">VOE PARA O ESPAÇO</button>
             </span>
@@ -40,16 +39,15 @@
     </header>
 
     <main class="container">
-        <section class="hero-section">
+        <section class="hero-section" id="hero">
             <div class="content">
                 <article class="hero-intro">
                     <hgroup draggable="false">
                         <h1 class="hero-title">
-                            _Explore novos horizontes!
+                            <span class="text-accent">_Explore</span> novos horizontes!
                         </h1>
 
-                        <p class="hero-description">Bem-vindo à revolução das viagens interplanetárias! A revolução das
-                            viagens interplanetárias!
+                        <p class="hero-description">Bem-vindo à revolução das viagens orbitais!
                         </p>
                     </hgroup>
                     <button class="outline-button">VOE AO ESPAÇO</button>
@@ -110,166 +108,188 @@
         </section>
 
         <section id="introduction-section">
-            <h1 class="title-introduction-section">Reserve Sua Viagem Espacial Agora!</h1>
+            <h1 class="title-introduction-section"><span class="text-accent">_Reserve</span> Sua <br> Viagem Espacial
+                Agora!
+            </h1>
+            <hr>
             <div class="wrapper-introduction-section">
-                <div>
-                    <img src="./svg/img-introduction-section.svg"
-                        alt="imagem de uma janela de um foguete para uma nebulosa" class="img-introduction-section">
-                </div>
-                <div>
-                    <p class="description-introduction-section">
-                        Embarque em uma aventura única e descubra o espaço como nunca antes.
-                    </p>
-                    <hr>
-                    <p class="description-introduction-section"> Vivencie vistas
-                        deslumbrantes, experiências emocionantes e momentos que durarão a vida toda. Não espere mais, o
-                        universo espera por você. Reserve sua jornada ao espaço hoje mesmo.
-                    </p>
-
-                </div>
+                <p>
+                    Embarque em uma aventura <span class="text-accent">única</span> e descubra o espaço como nunca
+                    antes.
+                </p>
+                <ul class="intro-list">
+                    <li><span class="text-accent">_Vivencie</span> vistas deslumbrantes.</li>
+                    <li><span class="text-accent">_Engaje</span> em experiências emocionantes.</li>
+                    <li><span class="text-accent">_Marque</span> momentos que durarão para a vida toda!</li>
+                </ul>
+                <hr>
+                <p>
+                    Não espere mais, o
+                    universo espera por você.
+                </p>
+                <button class="btn-solid">Reserve sua jornada ao espaço hoje mesmo.</button>
             </div>
         </section>
 
-        <section class="sobre-nos">
+        <section class="sobre-nos" id="about">
             <div class="text-wrapper">
                 <article>
                     <hgroup>
-                        <h1>Sobre Nós</h1>
-                        <p class="intro-font">Somos a <span>Orbit Trips</span>, apaixonados pela exploração espacial.
+                        <h1>_Sobre Nós</h1>
+                        <p>Somos a <span class="text-accent">Orbit Trips</span>, apaixonados pela
+                            <span class="text-accent">_exploração</span> espacial.
                         </p>
                     </hgroup>
                     <hr>
-                    <p>Nossa missão é tornar o
-                        espaço acessível a todos. <wbr />Com tecnologia de ponta e segurança de primeira linha, oferecemos
-                        aventuras inesquecíveis. Junte-se a nós na jornada estelar.
+                    <p>Nossa missão é tornar o espaço <span class="text-accent">acessível</span> a todos. <br><br> Com
+                        <span class="text-accent">tecnologia</span> de ponta e <span
+                            class="text-accent">segurança</span> de primeira linha, oferecemos
+                        aventuras inesquecíveis. <br><br><a href="/" class="text-accent">Junte-se a nós na jornada
+                            estelar!</a>
                     </p>
                 </article>
             </div>
-            <div class="img">
-                <img src="./imgs/rocket_01.png" alt="Imagem de um foguete">
-            </div>
         </section>
 
-        <section class="cardSection">
-            <h2>Explore as possibilidades do Espaço</h2>
-            <div class="cards">
-                <article id="card-1">
-                    <div class="box">
-                        <header class="card-header">
-                            <h3>Pacote de viagem: <span>"Aventura na Lua"</span></h3>
-                        </header>
-                        <div class="card-content">
-                            <div class="price">
-                                <p>A partir de <br><span id="first-span">$50.000 <span id="second-span">por
-                                            Pessoa</span></span></p>
-                            </div>
-                            <div class="travel">
-                                <ul>
-                                    <li>
-                                        <p>Destino: Lua</p>
-                                    </li>
-                                    <li>
-                                        <p>Duração: 7 Dias</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="description">
+        <section class="cardSection" id="cards">
+            <h1><span class="text-accent">_Explore</span> as possibilidades do Espaço</h2>
+                <hr>
+                <div class="cards">
+                    <article id="card-1">
+                        <div class="box">
+                            <header class="card-header">
+                                <h3>Pacote de viagem:</h3>
+                                <h2> <span class="text-accent">"_Aventura na Lua"</span></h2>
+                            </header>
+                            <div class="card-content">
+                                <div class="price">
+                                    <p>A partir de <br><span class="text-accent">$50.000 </span>por pessoa</p>
+                                    <hr>
+                                </div>
+                                <div class="travel">
+                                    <ul>
+                                        <li>
+                                            <p>Destino: Lua</p>
+                                        </li>
+                                        <li>
+                                            <p>Duração: 7 Dias</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="description">
 
-                                <p>Explore a maravilha lunar como nunca antes! Nosso pacote "Aventura na Lua" oferece
-                                    uma experiência incomparável, com passeios emocionantes pela superfície lunar,
-                                    vistas deslumbrantes da Terra e a oportunidade de deixar sua pegada na história.
-                                    Esta é a aventura dos seus sonhos, ao alcance dos aventureiros mais destemidos.
-                                </p>
+                                    <p>Explore a maravilha lunar como nunca antes! Nosso pacote "Aventura na Lua"
+                                        oferece
+                                        uma experiência incomparável, com passeios emocionantes pela superfície lunar,
+                                        vistas deslumbrantes da Terra e a oportunidade de deixar sua pegada na história.
+                                        Esta é a aventura dos seus sonhos, ao alcance dos aventureiros mais destemidos.
+                                    </p>
+                                </div>
                             </div>
+                            <hr>
+                            <footer class="card-footer">
+                                <button type="button">Reserve seu assento</button>
+                            </footer>
                         </div>
-                        <footer class="card-footer">
-                            <button type="button">Reserve seu assento</button>
-                        </footer>
-                    </div>
-                </article>
-                <article id="card-2">
-                    <div class="box">
-                        <header class="card-header">
-                            <h3>Pacote de viagem: <span>"Sistema Solar"</span></h3>
-                        </header>
-                        <div class="card-content">
-                            <div class="price">
-                                <p>A partir de <br><span id="first-span">$500.000 <span id="second-span">por
-                                            Pessoa</span></span></p>
-                            </div>
-                            <div class="travel">
-                                <ul>
-                                    <li>
-                                        <p>Destino: Sistema Solar Exterior</p>
-                                    </li>
-                                    <li>
-                                        <p>Duração: 30 Dias</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="description">
+                    </article>
+                    <article id="card-2">
+                        <div class="box">
+                            <header class="card-header">
+                                <h3>Pacote de viagem: </h3>
+                                <h2><span class="text-accent">"Sistema Solar"</span></h2>
+                            </header>
+                            <div class="card-content">
+                                <div class="price">
+                                    <p>A partir de <br><span class="text-accent">$500.000 </span>por pessoa</p>
+                                    <hr>
+                                </div>
+                                <div class="travel">
+                                    <ul>
+                                        <li>
+                                            <p>Destino: Sistema Solar Exterior</p>
+                                        </li>
+                                        <li>
+                                            <p>Duração: 30 Dias</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="description">
 
-                                <p>Prepare-se para a aventura mais épica da sua vida com nosso pacote "Além do Sistema
-                                    Solar". Explore os mundos distantes do sistema solar, incluindo planetas, luas e
-                                    asteroides. Esta é a viagem que todos os verdadeiros exploradores espaciais sonham
-                                    em fazer. Não perca a chance de ir além dos limites da imaginação.
-                                </p>
+                                    <p>Prepare-se para a <span class="text-accent">_aventura mais épica da sua
+                                            vida</span> com nosso pacote <strong>"Além do Sistema
+                                            Solar"</strong>. <br><br>Explore os mundos distantes do <strong>sistema
+                                            solar</strong>, incluindo <strong>planetas</strong>, <strong>luas</strong> e
+                                        <strong>asteroides</strong>. <br><br> Esta é a viagem que todos os verdadeiros
+                                        <span class="text-accent">_exploradores</span> espaciais sonham
+                                        em fazer.
+                                    </p>
+                                </div>
                             </div>
+                            <hr>
+                            <footer class="card-footer">
+                                <button class="btn-solid" type="button">Reserve seu assento</button>
+                            </footer>
                         </div>
-                        <footer class="card-footer">
-                            <button type="button">Reserve seu assento</button>
-                        </footer>
-                    </div>
-                </article>
-                <article id="card-3">
-                    <div class="box">
-                        <header class="card-header">
-                            <h3>Pacote de viagem: <span>"Órbita Estelar"</span></h3>
-                        </header>
-                        <div class="card-content">
-                            <div class="price">
-                                <p>A partir de <br><span id="first-span">$80.000 <span id="second-span">por
-                                            Pessoa</span></span></p>
-                            </div>
-                            <div class="travel">
-                                <ul>
-                                    <li>
-                                        <p>Destino: Órbita Terrestre</p>
-                                    </li>
-                                    <li>
-                                        <p>Duração: 10 Dias</p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="description">
+                    </article>
+                    <article id="card-3">
+                        <div class="box">
+                            <header class="card-header">
+                                <h3>Pacote de viagem:</h3>
+                                <h2><span class="text-accent">"Órbita Estelar"</span></h2>
+                            </header>
+                            <div class="card-content">
+                                <div class="price">
+                                    <p>A partir de <br><span class="text-accent">$80.000 </span>por pessoa</p>
+                                    <hr>
+                                </div>
+                                <div class="travel">
+                                    <ul>
+                                        <li>
+                                            <p>Destino: Órbita Terrestre</p>
+                                        </li>
+                                        <li>
+                                            <p>Duração: 10 Dias</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr>
+                                <div class="description">
 
-                                <p>Desafie a gravidade e entre em órbita terrestre com nosso pacote "Órbita Estelar".
-                                    Experimente vistas panorâmicas incomparáveis da Terra, flutue livremente no espaço e
-                                    testemunhe o nascer e o pôr do sol a cada 90 minutos. Esta é uma jornada única que o
-                                    deixará maravilhado com a beleza do nosso planeta e muito mais.
-                                </p>
+                                    <p>Desafie a gravidade e entre em órbita terrestre com nosso pacote "Órbita
+                                        Estelar".
+                                        Experimente vistas panorâmicas incomparáveis da Terra, flutue livremente no
+                                        espaço e
+                                        testemunhe o nascer e o pôr do sol a cada 90 minutos. Esta é uma jornada única
+                                        que o
+                                        deixará maravilhado com a beleza do nosso planeta e muito mais.
+                                    </p>
+                                </div>
                             </div>
+                            <hr>
+                            <footer class="card-footer">
+                                <button type="button">Reserve seu assento</button>
+                            </footer>
                         </div>
-                        <footer class="card-footer">
-                            <button type="button">Reserve seu assento</button>
-                        </footer>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                </div>
         </section>
 
         <section id="rocket">
-            <h2 class="title-rocket">O Foguete <span>Infinity Soarer</span></h2>
             <div class="wrapper-rocket">
                 <div class="container-img-rocket">
-                    <img src="./svg/rocket-1.svg" alt="Imagem do foguete dá empresa Orbit Trips" class="img-rocket">
-                </div>
-                <div class="wrapper-dedscription-rocket">
-                    <p class="description-rocket">Nossas Viagens Espaciais são impulsionadas por tecnologia de ponta e
-                        inovação, e nosso foguete reutilizável é a peça central de nossas incríveis aventuras.</p>
+                    <h2 class="title-rocket">O Foguete <span class="text-accent">_Infinity Soarer</span></h2>
+                    <p>Nossas Viagens Espaciais são impulsionadas por tecnologia de ponta e
+                        inovação, e nosso <strong>foguete reutilizável</strong> é a peça central de nossas incríveis aventuras.
+                    </p>
+
+                    <img draggable="false"
+                        src="./img/space-spaceship-rocket-rocketship-moon-travel-voyage-F100028163.jpg"
+                        alt="Imagem do foguete dá empresa Orbit Trips" class="img-rocket">
                     <hr>
-                    <p class="description-rocket">Projetado para levar você ao espaço com segurança e eficiência, nosso
-                        foguete representa o futuro da exploração espacial.</p>
+                    <p>Projetado para levar você ao espaço com segurança e eficiência, nosso
+                        foguete representa o <span class="text-accent">futuro da exploração espacial</span>.</p>
                 </div>
             </div>
         </section>
@@ -328,6 +348,7 @@
         </section>
     </footer>
 
+
     <!-- VLibras -->
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -356,6 +377,7 @@
 
     <!-- JS Files -->
     <script src="./js/app.js"></script>
+
 </body>
 
 </html>
