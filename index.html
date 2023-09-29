@@ -48,7 +48,8 @@
                             _Explore novos horizontes!
                         </h1>
 
-                        <p class="hero-description">Bem-vindo à revolução das viagens interplanetárias! A revolução das viagens interplanetárias!
+                        <p class="hero-description">Bem-vindo à revolução das viagens interplanetárias! A revolução das
+                            viagens interplanetárias!
                         </p>
                     </hgroup>
                     <button class="outline-button">VOE AO ESPAÇO</button>
@@ -97,13 +98,15 @@
                 </div>
             </div>
         </section>
-        <section class="anim-section">
-            <div class="anim-text">
-                <h2 class="anim-title">_UMA EXPERIÊNCIA</h2>
-                <h3 class="anim-desc">Bem-vindo à revolução das viagens interplanetárias! A revolução das viagens interplanetárias!</h3>
-                <button class="anim-btn">VOE AO ESPAÇO</button>
+        <section class="section-anim scroll-section spaceship">
+            <div class="msg-elem">
+                <h2>_UMA EXPERIÊNCIA</h2>
+                <h3>Bem-vindo à revolução das viagens interplanetárias! A revolução das viagens interplanetárias!</h3>
+                <button>VOE AO ESPAÇO</button>
             </div>
-            <canvas class="canvas"></canvas>
+            <div class="canvas-elem">
+                <canvas id="spaceship"></canvas>
+            </div>
         </section>
 
         <section id="introduction-section">
@@ -132,14 +135,15 @@
                 <article>
                     <hgroup>
                         <h1>Sobre Nós</h1>
-                        <p class="intro-font">Somos a <span>Orbit Trips</span>, apaixonados pela exploração espacial. </p> 
+                        <p class="intro-font">Somos a <span>Orbit Trips</span>, apaixonados pela exploração espacial.
+                        </p>
                     </hgroup>
                     <hr>
                     <p>Nossa missão é tornar o
                         espaço acessível a todos. <wbr />Com tecnologia de ponta e segurança de primeira linha, oferecemos
                         aventuras inesquecíveis. Junte-se a nós na jornada estelar.
                     </p>
-                    </article>
+                </article>
             </div>
             <div class="img">
                 <img src="./imgs/rocket_01.png" alt="Imagem de um foguete">
@@ -170,7 +174,7 @@
                                 </ul>
                             </div>
                             <div class="description">
-                               
+
                                 <p>Explore a maravilha lunar como nunca antes! Nosso pacote "Aventura na Lua" oferece
                                     uma experiência incomparável, com passeios emocionantes pela superfície lunar,
                                     vistas deslumbrantes da Terra e a oportunidade de deixar sua pegada na história.
@@ -204,7 +208,7 @@
                                 </ul>
                             </div>
                             <div class="description">
-                               
+
                                 <p>Prepare-se para a aventura mais épica da sua vida com nosso pacote "Além do Sistema
                                     Solar". Explore os mundos distantes do sistema solar, incluindo planetas, luas e
                                     asteroides. Esta é a viagem que todos os verdadeiros exploradores espaciais sonham
@@ -238,7 +242,7 @@
                                 </ul>
                             </div>
                             <div class="description">
-                               
+
                                 <p>Desafie a gravidade e entre em órbita terrestre com nosso pacote "Órbita Estelar".
                                     Experimente vistas panorâmicas incomparáveis da Terra, flutue livremente no espaço e
                                     testemunhe o nascer e o pôr do sol a cada 90 minutos. Esta é uma jornada única que o
@@ -263,7 +267,7 @@
                 <div class="wrapper-dedscription-rocket">
                     <p class="description-rocket">Nossas Viagens Espaciais são impulsionadas por tecnologia de ponta e
                         inovação, e nosso foguete reutilizável é a peça central de nossas incríveis aventuras.</p>
-                        <hr>
+                    <hr>
                     <p class="description-rocket">Projetado para levar você ao espaço com segurança e eficiência, nosso
                         foguete representa o futuro da exploração espacial.</p>
                 </div>
@@ -339,17 +343,18 @@
     </script>
 
 
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-    <!-- ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
-        integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-    <script src="./js/animateOnScroll.js"></script>
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+
+    <!-- ScrollMagic CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    </script>
+
+
+    <!-- JS Files -->
     <script src="./js/app.js"></script>
 </body>
 
